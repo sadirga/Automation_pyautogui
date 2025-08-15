@@ -51,3 +51,9 @@ pyautogui
 
 ## 📜 License
 MIT License — feel free to use and adapt, but please credit.
+
+---
+
+##💡 Fun Fact
+The app was built because I was tired of clicking the same 10 buttons every morning.
+Now my coffee is still warm when the reports are ready ☕.
