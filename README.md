@@ -39,6 +39,7 @@ pyautogui
 **Run the main script:**
   ```bash
   python main.py
+# Change the mouse coordinate with yours
 ```
 
 ---
