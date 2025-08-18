@@ -11,6 +11,7 @@ def input_sales():
     file_path_gf = config.get("SETTINGS", "file_path_gf")
     daily_report = config.get("SETTINGS", "daily_report")
     personal_path = config.get("SETTINGS", "personal_path")
+    totalSales = config.get("SETTINGS", "totalSales_path")
 
     # Load all floor files into a dict from config
     floor_files = dict(config.items("FLOORS"))
@@ -33,6 +34,19 @@ def input_sales():
         vertical_values = [[v] for v in values]
         wb.close()
         return vertical_values
+        
+    def input_sheet_sales(input_sheet):
+        # Get start column
+        start_col_index = int(input_sheet.range("B4").value) + 2
+
+        # totalSales
+        wb = app.books.open(totalSales)
+        ts_sheet = wb.sheets["totalSales"]
+        cust_cnt = [ts_sheet["S10"].value,ts_sheet["T10"].value,ts_sheet["T11"].value]
+
+        start_rows = {"cust_cnt": 25, "cust_tran": 29, "cust_tran_sacc": 30}
+        for index, value in enumerate(start_rows):
+            input_sheet.range((start_rows[value], start_col_index)).value = cust_cnt[index]
 
     # 1️⃣ Open daily report and get reference
     daily = app.books.open(daily_report)
@@ -55,3 +69,6 @@ def input_sales():
     for floor, path in floor_files.items():
         values = run_macro_and_get_values(path, floor.upper(), "B29:B33" if floor == "1f" else "B29:B31")
         daily_sheet.range((start_rows[floor], start_col_index)).value = values
+    
+    input_sheet_sales(input_sheet)    
+    

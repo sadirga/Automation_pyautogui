@@ -25,7 +25,7 @@ def run_sales_automation():
     # --- Show Desktop ---
     pyautogui.hotkey('win', 'd')  # Press Windows + D
 
-    # Start Automation
+    # Opening the targeted app
     pyautogui.moveTo(114, 25, duration=0.5)
     time.sleep(1)
     pyautogui.click()
@@ -40,9 +40,21 @@ def run_sales_automation():
     time.sleep(1)
     pyautogui.press('enter')
 
-    # --- Inside RIS ---
+    # --- Inside The Apps ---
     _open_sales_analysis()
     _set_date_and_options()
+    
+    # Saving the necessary values
+    pyautogui.press("F8")
+    time.sleep(1)
+    pyautogui.typewrite(str("totalSales"), interval = 0.05)
+    pyautogui.press("Enter")
+    pyautogui.press('left')
+    time.sleep(0.5)
+    pyautogui.press('enter')
+    time.sleep(0.5)
+    pyautogui.press('enter')
+    time.sleep(3)
     
     # Open Sales
     pyautogui.moveTo(387, 278, duration=0.5)
@@ -71,6 +83,7 @@ def run_sales_automation():
     )
     
 def _open_sales_analysis():
+    
     steps = [
         (105, 115),  # Store Sales Analysis
         (105, 133),  # Sales News
@@ -82,8 +95,9 @@ def _open_sales_analysis():
         pyautogui.click()
         pyautogui.click()
         time.sleep(1)
-
+    
 def _set_date_and_options():
+    # Setting yesterday date as the targeted date
     yesterday_str = (datetime.now() - timedelta(days=1)).strftime("%Y%m%d")
     pyautogui.typewrite(yesterday_str, interval=0.08)
     time.sleep(1)
@@ -133,7 +147,6 @@ def _save_sales_report(floor_name, coords):
     time.sleep(1)
     pyautogui.click()
     pyautogui.click()
-
-
+    
 if __name__ == "__main__":
     run_sales_automation()
