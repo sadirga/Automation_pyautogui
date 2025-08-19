@@ -24,7 +24,8 @@ def run_sales_automation():
         
     # --- Show Desktop ---
     pyautogui.hotkey('win', 'd')  # Press Windows + D
-
+    time.sleep(1)
+    
     # Opening the targeted app
     pyautogui.moveTo(114, 25, duration=0.5)
     time.sleep(1)
@@ -32,7 +33,7 @@ def run_sales_automation():
     pyautogui.press('enter')
 
     # Short delay before typing
-    time.sleep(2)
+    time.sleep(4)
 
     # Enter Password
     pyautogui.typewrite(password, interval=0.05)  # interval = delay between keystrokes
