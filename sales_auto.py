@@ -12,21 +12,26 @@ def input_sales():
     daily_report = config.get("SETTINGS", "daily_report")
     personal_path = config.get("SETTINGS", "personal_path")
     totalSales = config.get("SETTINGS", "totalSales_path")
+    addin_path = config.get("SETTINGS", "addin_path")
 
     # Load all floor files into a dict from config
     floor_files = dict(config.items("FLOORS"))
     
     # Using already open personal.xlb
-    app = xw.apps.active
-
+    # app = xw.apps.active
+    # Open excel and load the addin (macro excel)
+    app = xw.App(visible=True)
+    addin = app.books.open(addin_path)
+    
     # Run macro helper
     def run_macro_and_get_values(wb_path, sheet_name, cell_range):
         wb = app.books.open(wb_path)
         sheet = wb.sheets[sheet_name]
         time.sleep(1)
 
-        macro = app.books["PERSONAL.XLSB"].macro("clean_daily")
-        macro()
+        # macro = app.books["PERSONAL.XLSB"].macro("clean_daily")
+        # macro()
+        app.macro("mytools.xlam!clean_daily")()
 
         values = sheet.range(cell_range).value
         if not isinstance(values, list):
@@ -47,8 +52,10 @@ def input_sales():
         start_rows = {"cust_cnt": 25, "cust_tran": 29, "cust_tran_sacc": 30}
         for index, value in enumerate(start_rows):
             input_sheet.range((start_rows[value], start_col_index)).value = cust_cnt[index]
+        
+        wb.close()
 
-    # 1️⃣ Open daily report and get reference
+    # Open daily report and get reference
     daily = app.books.open(daily_report)
     daily_sheet = daily.sheets["REVENUE"]
     input_sheet = daily.sheets["INPUT"]
@@ -60,15 +67,16 @@ def input_sales():
     # Get start column
     start_col_index = int(daily_sheet.range("F1").value) + 4
 
-    # 2️⃣ GF
+    # GF
     gf_values = run_macro_and_get_values(file_path_gf, "GF", "B29:B31")
     daily_sheet.range((6, start_col_index)).value = gf_values
 
-    # 3️⃣ Floors from config loop
+    # Floors from config loop
     start_rows = {"1f": 11, "2f": 17, "3f": 21}
     for floor, path in floor_files.items():
         values = run_macro_and_get_values(path, floor.upper(), "B29:B33" if floor == "1f" else "B29:B31")
         daily_sheet.range((start_rows[floor], start_col_index)).value = values
     
+    # Function for sheet "INPUT"
     input_sheet_sales(input_sheet)    
     

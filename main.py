@@ -33,10 +33,11 @@ def run_sales_automation():
     pyautogui.press('enter')
 
     # Short delay before typing
-    time.sleep(4)
+    time.sleep(6)
 
     # Enter Password
     pyautogui.typewrite(password, interval=0.05)  # interval = delay between keystrokes
+    time.sleep(1)
     pyautogui.press('enter')
     time.sleep(1)
     pyautogui.press('enter')
@@ -80,7 +81,7 @@ def run_sales_automation():
         0,  # HWND — 0 means no owner window
         "Script completed successfully!",
         "Done",
-        0x00000040 | 0x00040000  # MB_ICONINFORMATION + MB_TOPMOST
+        0x00000040 | 0x00040000 | 0x00010000 # MB_ICONINFORMATION + MB_TOPMOST + MB_SETFOREGROUND
     )
     
 def _open_sales_analysis():
