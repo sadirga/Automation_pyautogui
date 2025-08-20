@@ -13,6 +13,7 @@ def input_sales():
     personal_path = config.get("SETTINGS", "personal_path")
     totalSales = config.get("SETTINGS", "totalSales_path")
     addin_path = config.get("SETTINGS", "addin_path")
+    all_brand = config.get("SETTINGS", "allbrand")
 
     # Load all floor files into a dict from config
     floor_files = dict(config.items("FLOORS"))
@@ -30,8 +31,6 @@ def input_sales():
         sheet = wb.sheets[sheet_name]
         time.sleep(1)
 
-        # macro = app.books["PERSONAL.XLSB"].macro("clean_daily")
-        # macro()
         app.macro("mytools.xlam!clean_daily")()
 
         values = sheet.range(cell_range).value
@@ -41,9 +40,21 @@ def input_sales():
         wb.close()
         return vertical_values
         
-    def input_sheet_sales(input_sheet):
+    def get_values_other(wb_path, sheet_name, cell_range):
+        wb = app.books.open(wb_path)
+        sheet = wb.sheets[sheet_name]
+        time.sleep(1)
+
+        app.macro("mytools.xlam!for_other_doc")()
+
+        values = sheet.range(cell_range).value
+        normal_values = [v for v in values]
+        wb.close()
+        return normal_values
+        
+    def input_sheet_sales(sheet_name):
         # Get start column
-        start_col_index = int(input_sheet.range("B4").value) + 2
+        start_col_index = int(sheet_name.range("B4").value) + 2
 
         # totalSales
         wb = app.books.open(totalSales)
@@ -52,14 +63,26 @@ def input_sales():
 
         start_rows = {"cust_cnt": 25, "cust_tran": 29, "cust_tran_sacc": 30}
         for index, value in enumerate(start_rows):
-            input_sheet.range((start_rows[value], start_col_index)).value = cust_cnt[index]
+            sheet_name.range((start_rows[value], start_col_index)).value = cust_cnt[index]
         
         wb.close()
+    
+    def other_revenue_sales(input_sheet, sheet_name):
+        # Get start column
+        start_col_index = int(input_sheet.range("B4").value) + 4
+        
+        # Revenue
+        other_values = get_values_other(all_brand,"allbrand", "M2:M5")
+        start_rows = {"440106": 4, "440105" : 11, "121160" : 17, "511117" : 23}
+        for i, value in enumerate(start_rows):
+            sheet_name.range((start_rows[value], start_col_index)).value = other_values[i]
+        
 
     # Open daily report and get reference
     daily = app.books.open(daily_report)
     daily_sheet = daily.sheets["REVENUE"]
     input_sheet = daily.sheets["INPUT"]
+    other_sheet = daily.sheets["Other_Revenue"]
 
     # Update day number
     day_number = (datetime.now() - timedelta(days=1)).day
@@ -80,4 +103,8 @@ def input_sales():
     
     # Function for sheet "INPUT"
     input_sheet_sales(input_sheet)    
+    
+    # Other revenue
+    other_revenue_sales(input_sheet, other_sheet)
+
     

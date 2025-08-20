@@ -48,7 +48,7 @@ def run_app_and_login(shortcut_path, proc_name):
     proc = wait_for_process(proc_name, timeout=20)
 
     # Wait for UI to show
-    wait_for_pixel(1256, 622, (255,255,255))
+    wait_for_pixel(1256, 622, (255,255,255)) # Need to adjust the pixel on other device
 
     # Enter password
     password = get_password()
@@ -86,7 +86,7 @@ def run_sales_automation():
     time.sleep(3)
     
     # Open Sales
-    pyautogui.moveTo(387, 278, duration=0.5)
+    pyautogui.moveTo(387, 278, duration=0.5) # 1st time enter
     time.sleep(1)
     pyautogui.click()
     pyautogui.click()
@@ -100,7 +100,16 @@ def run_sales_automation():
         ("3F", (395, 443))
     ]:
         _save_sales_report(floor_name, coords)
-        
+    
+    # MenuOpn
+    pyautogui.moveTo(191, 32, duration=0.1)
+    time.sleep(1)
+    pyautogui.click()
+    
+    # Sales Report
+    _daily_sales_analysis()
+    
+    # Writing in Excel function
     sato.input_sales()
    
     # Popup done
@@ -124,23 +133,63 @@ def _open_sales_analysis():
         pyautogui.click()
         pyautogui.click()
         time.sleep(1)
+        
+def _daily_sales_analysis():
+    
+    steps = [
+        (97, 186),  # Daily Sales analysis
+        (97, 240),  # Sales Report
+    ]
+    for x, y in steps:
+        pyautogui.moveTo(x, y, duration=0.3)
+        time.sleep(0.5)
+        pyautogui.click()
+        pyautogui.click()
+        time.sleep(1)
+    
+    # Set Date
+    pyautogui.moveTo(354, 109, duration=0.3) # cursor mengarah pilihan date/tanggal
+    pyautogui.click()
+    yesterday_str = (datetime.now() - timedelta(days=1)).strftime("%Y%m%d")
+    time.sleep(0.5)
+    pyautogui.typewrite(yesterday_str, interval=0.08)
+    pyautogui.typewrite(yesterday_str, interval=0.08)
+    
+    # Open feature
+    pyautogui.moveTo(141, 178, duration=0.3) # Cursor memilih tab "Pay Sumamry"
+    pyautogui.click()
+    time.sleep(1)
+    pyautogui.press('f2')
+    wait_for_pixel(451,228, (0,120,215)) # Wait until loading data finish
+    
+    # Save File
+    pyautogui.press('f8')
+    pyautogui.typewrite("allbrand", interval=0.05)
+    pyautogui.press('enter')
+    time.sleep(0.5)
+    pyautogui.press('left')
+    time.sleep(0.5)
+    pyautogui.press('enter')
+    time.sleep(0.5)
+    pyautogui.press('enter')
+    time.sleep(1)
     
 def _set_date_and_options():
     # Setting yesterday date as the targeted date
     yesterday_str = (datetime.now() - timedelta(days=1)).strftime("%Y%m%d")
     pyautogui.typewrite(yesterday_str, interval=0.08)
     time.sleep(1)
-    pyautogui.moveTo(1664, 113, duration=0.3)
+    pyautogui.moveTo(1664, 113, duration=0.3) # koordinat pilihan tanggal
     time.sleep(1)
     pyautogui.click()
 
     # Option Button
-    pyautogui.moveTo(1844, 103, duration=0.5)
+    pyautogui.moveTo(1844, 103, duration=0.5) # koordinat pilihan option
     time.sleep(1)
     pyautogui.click()
 
     # Unit Rp
-    pyautogui.moveTo(849, 525, duration=0.5)
+    pyautogui.moveTo(849, 525, duration=0.5) # koordinat pilihan unit
     time.sleep(1)
     pyautogui.click()
 
@@ -176,6 +225,8 @@ def _save_sales_report(floor_name, coords):
     time.sleep(1)
     pyautogui.click()
     pyautogui.click()
+   
+    
     
 if __name__ == "__main__":
     run_sales_automation()
