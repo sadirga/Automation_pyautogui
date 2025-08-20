@@ -2,11 +2,12 @@
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)  
 ![License](https://img.shields.io/badge/License-MIT-green.svg)  
-![Last Commit](https://img.shields.io/github/last-commit/sadirga/Automation_pyautogui)  
+![Last Commit](https://img.shields.io/github.com/last-commit/sadirga/Automation_pyautogui)
 ![Issues](https://img.shields.io/github/issues/sadirga/Automation_pyautogui)  
 
 > **Automate. Simplify. Save Time.**  
 > Lazitive helps your laziness speed up daily repetitive Excel reporting by fetching data from multiple sources, cleaning it, and updating your master file with just one command.
+
 ---
 
 ## ✨ Features
@@ -14,9 +15,10 @@
 - 📂 **No Hardcoding** — Reads all file paths from a `config.ini`
 - 🔒 **Secure** — Keep credentials safe with environment variables
 - 📊 **Excel Automation** — Powered by [xlwings](https://www.xlwings.org/)
+- 🖱️ **Robust App Launch** — Opens the sales app via Windows shortcut instead of fragile mouse coordinates  
+- 📑 **Extended Data Input** — Inputs multiple values across different Excel sheets, not just totals  
 - ⏱️ **Fast** — Updates multiple reports in under 10 seconds
 - 🖥️ **Friendly UI** — Completion popup when done
-
 ---
 
 ## 📦 Requirements  
@@ -31,6 +33,8 @@ pip install -r requirements.txt
 ```nginx
 xlwings
 pyautogui
+pillow
+pywin32
 ```
 
 ---
