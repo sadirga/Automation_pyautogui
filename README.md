@@ -2,8 +2,8 @@
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)  
 ![License](https://img.shields.io/badge/License-MIT-green.svg)  
-![Last Commit](https://img.shields.io/github.com/last-commit/sadirga/Automation_pyautogui)
-![Issues](https://img.shields.io/github/issues/sadirga/Automation_pyautogui)  
+![Last Commit](https://img.shields.io/badge/Last%20Commit-Aug%202025-blue)
+![Issues](https://img.shields.io/badge/Issues-0%20open-green) 
 
 > **Automate. Simplify. Save Time.**  
 > Lazitive helps your laziness speed up daily repetitive Excel reporting by fetching data from multiple sources, cleaning it, and updating your master file with just one command.
