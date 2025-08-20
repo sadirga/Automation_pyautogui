@@ -17,8 +17,9 @@ def input_sales():
     # Load all floor files into a dict from config
     floor_files = dict(config.items("FLOORS"))
     
-    # Using already open personal.xlb
-    # app = xw.apps.active
+    ### Using already open personal.xlb ###
+    ### app = xw.apps.active ###
+    
     # Open excel and load the addin (macro excel)
     app = xw.App(visible=True)
     addin = app.books.open(addin_path)

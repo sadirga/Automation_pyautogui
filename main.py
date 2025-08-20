@@ -1,4 +1,5 @@
 import pyautogui
+import psutil
 import time
 import sales_auto as sato
 from datetime import date, timedelta, datetime
@@ -6,7 +7,27 @@ import ctypes
 import os
 import tkinter as tk
 from tkinter import simpledialog
+import configparser
 
+def wait_for_pixel(x, y, expected_rgb, timeout=30):
+    """Wait until pixel at (x,y) matches expected_rgb, or timeout"""
+    start = time.time()
+    while time.time() - start < timeout:
+        pixel = pyautogui.screenshot().getpixel((x, y))
+        if pixel == expected_rgb:
+            return True
+        time.sleep(0.5)
+    raise TimeoutError(f"UI not ready after {timeout}s at pixel {x},{y}")
+
+def wait_for_process(proc_name, timeout=30):
+    """Wait until a process with given name appears."""
+    start = time.time()
+    while time.time() - start < timeout:
+        for p in psutil.process_iter(["name"]):
+            if p.info["name"] and proc_name.lower() in p.info["name"].lower():
+                return p
+        time.sleep(0.5)
+    raise TimeoutError(f"Process '{proc_name}' not found after {timeout}s")
 
 def get_password():
     password = os.getenv("RIS_PASSWORD")
@@ -18,29 +39,35 @@ def get_password():
         if not password:
             raise ValueError("Password was not provided!")
     return password
+
+def run_app_and_login(shortcut_path, proc_name):
+    # Start via shortcut
+    os.startfile(shortcut_path)
+
+    # Wait for process showing
+    proc = wait_for_process(proc_name, timeout=20)
+
+    # Wait for UI to show
+    wait_for_pixel(1256, 622, (255,255,255))
+
+    # Enter password
+    password = get_password()
+    pyautogui.typewrite(password, interval=0.05)
+    
+    pyautogui.press("enter")
+    time.sleep(0.5)
+    pyautogui.press("enter")
         
 def run_sales_automation():
-    password = get_password()
-        
-    # --- Show Desktop ---
-    pyautogui.hotkey('win', 'd')  # Press Windows + D
-    time.sleep(1)
+    # Load config
+    config = configparser.ConfigParser()
+    config.read("config.ini")
     
-    # Opening the targeted app
-    pyautogui.moveTo(114, 25, duration=0.5)
-    time.sleep(1)
-    pyautogui.click()
-    pyautogui.press('enter')
-
-    # Short delay before typing
-    time.sleep(6)
-
-    # Enter Password
-    pyautogui.typewrite(password, interval=0.05)  # interval = delay between keystrokes
-    time.sleep(1)
-    pyautogui.press('enter')
-    time.sleep(1)
-    pyautogui.press('enter')
+    app_path = config.get("SETTINGS", "app_path")
+    app_name = config.get("SETTINGS", "app_name")
+    
+    # Open app and enter Password
+    run_app_and_login(app_path, app_name)
 
     # --- Inside The Apps ---
     _open_sales_analysis()
