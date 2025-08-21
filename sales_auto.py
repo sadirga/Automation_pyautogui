@@ -1,4 +1,4 @@
-def input_sales():
+def input_sales(day_number):
     import xlwings as xw
     import time
     from datetime import datetime, timedelta
@@ -85,7 +85,8 @@ def input_sales():
     other_sheet = daily.sheets["Other_Revenue"]
 
     # Update day number
-    day_number = (datetime.now() - timedelta(days=1)).day
+    # day_number = (datetime.now() - timedelta(days=1)).day
+    # day_number = day_number
     input_sheet["B4"].value = day_number
 
     # Get start column

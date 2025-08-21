@@ -9,6 +9,14 @@ import tkinter as tk
 from tkinter import simpledialog
 import configparser
 
+def ask_for_date():
+    root = tk.Tk()
+    root.withdraw()  # hide main window
+    day_str = simpledialog.askstring("Input", "Enter day number (1-31):")
+    root.destroy()
+    today = datetime.today()
+    return datetime(today.year, today.month, int(day_str))
+    
 def wait_for_pixel(x, y, expected_rgb, timeout=30):
     """Wait until pixel at (x,y) matches expected_rgb, or timeout"""
     start = time.time()
@@ -65,13 +73,17 @@ def run_sales_automation():
     
     app_path = config.get("SETTINGS", "app_path")
     app_name = config.get("SETTINGS", "app_name")
+   
+    yesterday_date = ask_for_date()
+    yesterday_str = yesterday_date.strftime("%Y%m%d")
+    # print(yesterday_str)
     
     # Open app and enter Password
     run_app_and_login(app_path, app_name)
 
     # --- Inside The Apps ---
     _open_sales_analysis()
-    _set_date_and_options()
+    _set_date_and_options(yesterday_str)
     
     # Saving the necessary values
     pyautogui.press("F8")
@@ -107,10 +119,11 @@ def run_sales_automation():
     pyautogui.click()
     
     # Sales Report
-    _daily_sales_analysis()
+    _daily_sales_analysis(yesterday_str)
     
     # Writing in Excel function
-    sato.input_sales()
+    day_number = yesterday_date.day
+    sato.input_sales(day_number)
    
     # Popup done
     ctypes.windll.user32.MessageBoxW(
@@ -134,7 +147,7 @@ def _open_sales_analysis():
         pyautogui.click()
         time.sleep(1)
         
-def _daily_sales_analysis():
+def _daily_sales_analysis(yesterday):
     
     steps = [
         (97, 186),  # Daily Sales analysis
@@ -150,7 +163,8 @@ def _daily_sales_analysis():
     # Set Date
     pyautogui.moveTo(354, 109, duration=0.3) # cursor mengarah pilihan date/tanggal
     pyautogui.click()
-    yesterday_str = (datetime.now() - timedelta(days=1)).strftime("%Y%m%d")
+    # yesterday_str = (datetime.now() - timedelta(days=1)).strftime("%Y%m%d")
+    yesterday_str = yesterday
     time.sleep(0.5)
     pyautogui.typewrite(yesterday_str, interval=0.08)
     pyautogui.typewrite(yesterday_str, interval=0.08)
@@ -174,9 +188,10 @@ def _daily_sales_analysis():
     pyautogui.press('enter')
     time.sleep(1)
     
-def _set_date_and_options():
+def _set_date_and_options(yesterday_str):
     # Setting yesterday date as the targeted date
-    yesterday_str = (datetime.now() - timedelta(days=1)).strftime("%Y%m%d")
+    # yesterday_str = (datetime.now() - timedelta(days=1)).strftime("%Y%m%d")
+
     pyautogui.typewrite(yesterday_str, interval=0.08)
     time.sleep(1)
     pyautogui.moveTo(1664, 113, duration=0.3) # koordinat pilihan tanggal
