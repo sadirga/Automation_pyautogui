@@ -67,6 +67,11 @@ def run_app_and_login(shortcut_path, proc_name):
     pyautogui.press("enter")
         
 def run_sales_automation():
+    
+    # Press Windows + D
+    pyautogui.hotkey("winleft", "d")
+    time.sleep(2)
+    
     # Load config
     config = configparser.ConfigParser()
     config.read("config.ini")
@@ -74,16 +79,15 @@ def run_sales_automation():
     app_path = config.get("SETTINGS", "app_path")
     app_name = config.get("SETTINGS", "app_name")
    
-    yesterday_date = ask_for_date()
-    yesterday_str = yesterday_date.strftime("%Y%m%d")
-    # print(yesterday_str)
+    input_date = ask_for_date()
+    input_day_str = input_date.strftime("%Y%m%d")
     
     # Open app and enter Password
     run_app_and_login(app_path, app_name)
 
     # --- Inside The Apps ---
     _open_sales_analysis()
-    _set_date_and_options(yesterday_str)
+    _set_date_and_options(input_day_str)
     
     # Saving the necessary values
     pyautogui.press("F8")
@@ -119,12 +123,14 @@ def run_sales_automation():
     pyautogui.click()
     
     # Sales Report
-    _daily_sales_analysis(yesterday_str)
+    _daily_sales_analysis(input_day_str)
     
     # Writing in Excel function
-    day_number = yesterday_date.day
+    day_number = input_date.day
     sato.input_sales(day_number)
-   
+    
+    
+    
     # Popup done
     ctypes.windll.user32.MessageBoxW(
         0,  # HWND — 0 means no owner window
@@ -141,13 +147,13 @@ def _open_sales_analysis():
         (105, 150),  # Total Sales News
     ]
     for x, y in steps:
-        pyautogui.moveTo(x, y, duration=0.3)
+        pyautogui.moveTo(x, y, duration=0.2)
         time.sleep(0.5)
         pyautogui.click()
         pyautogui.click()
         time.sleep(1)
         
-def _daily_sales_analysis(yesterday):
+def _daily_sales_analysis(input_day):
     
     steps = [
         (97, 186),  # Daily Sales analysis
@@ -161,13 +167,12 @@ def _daily_sales_analysis(yesterday):
         time.sleep(1)
     
     # Set Date
-    pyautogui.moveTo(354, 109, duration=0.3) # cursor mengarah pilihan date/tanggal
+    pyautogui.moveTo(354, 109, duration=0.2) # cursor mengarah pilihan date/tanggal
     pyautogui.click()
-    # yesterday_str = (datetime.now() - timedelta(days=1)).strftime("%Y%m%d")
-    yesterday_str = yesterday
+    input_day_str = input_day
     time.sleep(0.5)
-    pyautogui.typewrite(yesterday_str, interval=0.08)
-    pyautogui.typewrite(yesterday_str, interval=0.08)
+    pyautogui.typewrite(input_day_str, interval=0.08)
+    pyautogui.typewrite(input_day_str, interval=0.08)
     
     # Open feature
     pyautogui.moveTo(141, 178, duration=0.3) # Cursor memilih tab "Pay Sumamry"
@@ -188,11 +193,9 @@ def _daily_sales_analysis(yesterday):
     pyautogui.press('enter')
     time.sleep(1)
     
-def _set_date_and_options(yesterday_str):
-    # Setting yesterday date as the targeted date
-    # yesterday_str = (datetime.now() - timedelta(days=1)).strftime("%Y%m%d")
-
-    pyautogui.typewrite(yesterday_str, interval=0.08)
+def _set_date_and_options(input_day_str):
+    # Setting input_day_str date as the targeted date
+    pyautogui.typewrite(input_day_str, interval=0.08)
     time.sleep(1)
     pyautogui.moveTo(1664, 113, duration=0.3) # koordinat pilihan tanggal
     time.sleep(1)

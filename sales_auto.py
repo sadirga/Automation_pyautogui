@@ -19,7 +19,7 @@ def input_sales(day_number):
     floor_files = dict(config.items("FLOORS"))
     
     ### Using already open personal.xlb ###
-    ### app = xw.apps.active ###
+    ### app = xw.apps.active ### previous code to activate excel from existing open workbook
     
     # Open excel and load the addin (macro excel)
     app = xw.App(visible=True)
@@ -85,8 +85,6 @@ def input_sales(day_number):
     other_sheet = daily.sheets["Other_Revenue"]
 
     # Update day number
-    # day_number = (datetime.now() - timedelta(days=1)).day
-    # day_number = day_number
     input_sheet["B4"].value = day_number
 
     # Get start column
@@ -107,5 +105,8 @@ def input_sales(day_number):
     
     # Other revenue
     other_revenue_sales(input_sheet, other_sheet)
-
+    
+    daily.save()
+    daily.close()
+    app.quit()
     
