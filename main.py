@@ -65,6 +65,7 @@ def run_app_and_login(shortcut_path, proc_name):
     pyautogui.press("enter")
     time.sleep(0.5)
     pyautogui.press("enter")
+    time.sleep(0.5)
         
 def run_sales_automation():
     
@@ -147,7 +148,7 @@ def _open_sales_analysis():
         (105, 150),  # Total Sales News
     ]
     for x, y in steps:
-        pyautogui.moveTo(x, y, duration=0.2)
+        pyautogui.moveTo(x, y, duration=0.5)
         time.sleep(0.5)
         pyautogui.click()
         pyautogui.click()

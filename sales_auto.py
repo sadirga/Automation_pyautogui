@@ -76,7 +76,6 @@ def input_sales(day_number):
         start_rows = {"440106": 4, "440105" : 11, "121160" : 17, "511117" : 23}
         for i, value in enumerate(start_rows):
             sheet_name.range((start_rows[value], start_col_index)).value = other_values[i]
-        
 
     # Open daily report and get reference
     daily = app.books.open(daily_report)
