@@ -1,0 +1,762 @@
+2025-08-28 11:38:12,834 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 119, in <module>
+    main()
+    ~~~~^^
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 102, in main
+    logger.info("Script started")
+    ^^^^^^
+UnboundLocalError: cannot access local variable 'logger' where it is not associated with a value
+2025-08-28 11:38:28,482 - INFO - Script started
+2025-08-28 11:38:28,484 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 119, in <module>
+    main()
+    ~~~~^^
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 113, in main
+    daily_2(daily_sales_report, input_sheet, revenue_sheet)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 49, in daily_2
+    file_path = config.get("SETTINGS", "daily_report_2_path")
+                ^^^^^^
+NameError: name 'config' is not defined
+2025-08-28 11:39:34,900 - INFO - Script started
+2025-08-28 11:39:37,012 - INFO - Script finished in 2.11 seconds
+2025-08-28 11:41:15,183 - INFO - Script started
+2025-08-28 11:41:15,697 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 121, in <module>
+    main()
+    ~~~~^^
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 115, in main
+    daily_2(daily_sales_report, input_sheet, revenue_sheet)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 67, in daily_2
+    wb = get_or_open_wb(final_filename)
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 39, in get_or_open_wb
+    logger.info("Workbook already open.")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2025-08-28 11:42:07,295 - INFO - Script started
+2025-08-28 11:42:08,204 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 121, in <module>
+    main()
+    ~~~~^^
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 115, in main
+    daily_2(daily_sales_report, input_sheet, revenue_sheet)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 94, in daily_2
+    logger.info("input row:",input_row, "row:",row, "value:",input_value)
+    ^^^^^^
+NameError: name 'logger' is not defined
+2025-08-28 11:46:29,602 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 98, in <module>
+    main()
+    ~~~~^^
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 81, in main
+    logger.info("Script started")
+    ^^^^^^
+UnboundLocalError: cannot access local variable 'logger' where it is not associated with a value
+2025-08-28 11:48:09,271 - INFO - Script started
+2025-08-28 11:48:09,771 - INFO - Workbook already open.
+2025-08-28 11:48:09,837 - INFO - Workbook already open.
+2025-08-28 11:48:10,756 - INFO - Script finished in 1.49 seconds
+2025-08-28 11:53:25,405 - INFO - Script started
+2025-08-28 11:53:25,882 - INFO - Opening new workbook.
+2025-08-28 11:53:26,714 - INFO - Workbook already open.
+2025-08-28 11:53:27,377 - INFO - Script running succesfully, finished in 1.97 seconds
+2025-08-29 08:51:02,611 - INFO - Script started
+2025-08-29 08:51:03,190 - INFO - Opening new workbook.
+2025-08-29 08:51:04,209 - INFO - Workbook already open.
+2025-08-29 08:51:04,905 - INFO - Script running succesfully, finished in 2.29 seconds
+2025-08-29 08:54:40,365 - INFO - Script started
+2025-08-29 08:54:40,923 - INFO - Opening new workbook.
+2025-08-29 08:54:41,749 - INFO - Opening new workbook.
+2025-08-29 08:54:44,437 - INFO - Script running succesfully, finished in 4.07 seconds
+2025-08-29 09:04:21,367 - INFO - Script started
+2025-08-29 09:04:22,040 - INFO - Workbook already open.
+2025-08-29 09:04:22,089 - INFO - Opening new workbook.
+2025-08-29 09:04:25,350 - INFO - Script running succesfully, finished in 3.98 seconds
+2025-09-02 07:51:39,377 - INFO - Script started
+2025-09-02 07:51:40,085 - INFO - Opening new workbook.
+2025-09-02 07:51:41,057 - INFO - Workbook already open.
+2025-09-02 07:51:41,755 - INFO - Script running succesfully, finished in 2.38 seconds
+2025-09-02 07:53:57,129 - INFO - Script started
+2025-09-02 07:53:57,813 - INFO - Opening new workbook.
+2025-09-02 07:53:58,709 - INFO - Opening new workbook.
+2025-09-02 07:54:01,644 - INFO - Script running succesfully, finished in 4.51 seconds
+2025-09-03 08:24:06,943 - INFO - Script started
+2025-09-03 08:24:08,700 - INFO - Opening new workbook.
+2025-09-03 08:24:10,491 - INFO - Workbook already open.
+2025-09-03 08:24:11,651 - INFO - Script running succesfully, finished in 4.71 seconds
+2025-09-04 08:55:54,247 - INFO - Script started
+2025-09-04 08:55:54,912 - INFO - Opening new workbook.
+2025-09-04 08:55:56,042 - INFO - Workbook already open.
+2025-09-04 08:55:56,893 - INFO - Script running succesfully, finished in 2.65 seconds
+2025-09-05 09:16:45,160 - INFO - Script started
+2025-09-05 09:16:45,867 - INFO - Opening new workbook.
+2025-09-05 09:16:46,966 - INFO - Opening new workbook.
+2025-09-05 09:16:49,808 - INFO - Script running succesfully, finished in 4.65 seconds
+2025-09-06 09:01:34,755 - INFO - Script started
+2025-09-06 09:01:35,632 - INFO - Opening new workbook.
+2025-09-06 09:01:36,909 - INFO - Workbook already open.
+2025-09-06 09:01:37,623 - INFO - Script running succesfully, finished in 2.87 seconds
+2025-09-07 10:03:43,966 - INFO - Script started
+2025-09-07 10:03:44,830 - INFO - Opening new workbook.
+2025-09-07 10:03:45,914 - INFO - Workbook already open.
+2025-09-07 10:03:46,641 - INFO - Script running succesfully, finished in 2.67 seconds
+2025-09-08 08:22:55,233 - INFO - Script started
+2025-09-08 08:22:55,808 - INFO - Opening new workbook.
+2025-09-08 08:22:56,734 - INFO - Opening new workbook.
+2025-09-08 08:22:59,421 - INFO - Script running succesfully, finished in 4.19 seconds
+2025-09-09 08:39:42,030 - INFO - Script started
+2025-09-09 08:39:42,591 - INFO - Opening new workbook.
+2025-09-09 08:39:42,595 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 99, in <module>
+    main()
+    ~~~~^^
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 92, in main
+    daily_2(daily_sales_report, input_sheet, revenue_sheet)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 45, in daily_2
+    wb = get_or_open_wb(final_filename)
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 22, in get_or_open_wb
+    return xw.books.open(filepath)
+           ~~~~~~~~~~~~~^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\xlwings\main.py", line 5174, in open
+    raise FileNotFoundError("No such file: '%s'" % fullname)
+FileNotFoundError: No such file: 'E:\1. Sales Strategy\2025\1. DAILY REPORT\250908★ 25년 9월 해외점포 실적동향 (자카르탇점).xlsx'
+2025-09-09 08:39:57,603 - INFO - Script started
+2025-09-09 08:39:58,090 - INFO - Opening new workbook.
+2025-09-09 08:39:58,998 - INFO - Workbook already open.
+2025-09-09 08:39:59,658 - INFO - Script running succesfully, finished in 2.06 seconds
+2025-09-10 08:23:19,794 - INFO - Script started
+2025-09-10 08:23:20,892 - INFO - Opening new workbook.
+2025-09-10 08:23:22,214 - INFO - Workbook already open.
+2025-09-10 08:23:23,048 - INFO - Script running succesfully, finished in 3.25 seconds
+2025-09-11 08:24:26,861 - INFO - Script started
+2025-09-11 08:24:27,280 - INFO - Opening new workbook.
+2025-09-11 08:24:27,995 - INFO - Workbook already open.
+2025-09-11 08:24:28,619 - INFO - Script running succesfully, finished in 1.76 seconds
+2025-09-12 09:01:58,724 - INFO - Opening new workbook.
+2025-09-12 10:33:15,626 - INFO - === Sales automation started ===
+2025-09-12 10:34:45,415 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 252, in run_sales_automation
+    sato.input_sales(input_date.day)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 29, in input_sales
+    addin = app.books.open(addin_path)
+                           ^^^^^^^^^^
+NameError: name 'addin_path' is not defined
+2025-09-12 10:34:45,419 - INFO - Start time : 2025-09-12 10:33:15
+2025-09-12 10:34:45,419 - INFO - End time   : 2025-09-12 10:34:45
+2025-09-12 10:34:45,419 - INFO - Elapsed    : 1m 29s
+2025-09-12 10:34:45,420 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 277, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 252, in run_sales_automation
+    sato.input_sales(input_date.day)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 29, in input_sales
+    addin = app.books.open(addin_path)
+                           ^^^^^^^^^^
+NameError: name 'addin_path' is not defined
+2025-09-12 10:37:15,356 - INFO - === Sales automation started ===
+2025-09-12 10:38:40,825 - ERROR - Error during input_sales execution
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 33, in input_sales
+    daily = _get_or_open_wb(path["daily_report"])
+                            ^^^^
+UnboundLocalError: cannot access local variable 'path' where it is not associated with a value
+2025-09-12 10:38:41,221 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 33, in input_sales
+    daily = _get_or_open_wb(path["daily_report"])
+                            ^^^^
+UnboundLocalError: cannot access local variable 'path' where it is not associated with a value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 252, in run_sales_automation
+    sato.input_sales(input_date.day)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 72, in input_sales
+    elapsed = time.time() - start_time
+                            ^^^^^^^^^^
+NameError: name 'start_time' is not defined
+2025-09-12 10:38:41,224 - INFO - Start time : 2025-09-12 10:37:15
+2025-09-12 10:38:41,224 - INFO - End time   : 2025-09-12 10:38:41
+2025-09-12 10:38:41,224 - INFO - Elapsed    : 1m 25s
+2025-09-12 10:38:41,224 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 33, in input_sales
+    daily = _get_or_open_wb(path["daily_report"])
+                            ^^^^
+UnboundLocalError: cannot access local variable 'path' where it is not associated with a value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 277, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 252, in run_sales_automation
+    sato.input_sales(input_date.day)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 72, in input_sales
+    elapsed = time.time() - start_time
+                            ^^^^^^^^^^
+NameError: name 'start_time' is not defined
+2025-09-12 10:41:31,625 - INFO - === Sales automation started ===
+2025-09-12 10:42:25,964 - INFO - Start time : 2025-09-12 10:41:31
+2025-09-12 10:42:25,965 - INFO - End time   : 2025-09-12 10:42:25
+2025-09-12 10:42:25,965 - INFO - Elapsed    : 0m 54s
+2025-09-12 10:42:58,056 - INFO - === Sales automation started ===
+2025-09-12 10:44:22,574 - INFO - === input_sales started for day 11 ===
+2025-09-12 10:44:23,367 - INFO - Opening new workbook: {filepath}
+2025-09-12 10:44:25,152 - ERROR - Error during input_sales execution
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 47, in input_sales
+    gf_values = _run_macro_and_get_values(file_path_gf, "GF", "B29:B31")
+                                          ^^^^^^^^^^^^
+NameError: name 'file_path_gf' is not defined
+2025-09-12 10:44:25,477 - INFO - === input_sales finished in 0m 2s ===
+2025-09-12 10:44:25,478 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 252, in run_sales_automation
+    sato.input_sales(input_date.day)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 47, in input_sales
+    gf_values = _run_macro_and_get_values(file_path_gf, "GF", "B29:B31")
+                                          ^^^^^^^^^^^^
+NameError: name 'file_path_gf' is not defined
+2025-09-12 10:44:25,479 - INFO - Start time : 2025-09-12 10:42:58
+2025-09-12 10:44:25,479 - INFO - End time   : 2025-09-12 10:44:25
+2025-09-12 10:44:25,479 - INFO - Elapsed    : 1m 27s
+2025-09-12 10:44:25,479 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 277, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 252, in run_sales_automation
+    sato.input_sales(input_date.day)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 47, in input_sales
+    gf_values = _run_macro_and_get_values(file_path_gf, "GF", "B29:B31")
+                                          ^^^^^^^^^^^^
+NameError: name 'file_path_gf' is not defined
+2025-09-12 10:47:00,246 - INFO - === Sales automation started ===
+2025-09-12 10:48:25,129 - INFO - === input_sales started for day 11 ===
+2025-09-12 10:48:26,029 - INFO - Opening new workbook: {filepath}
+2025-09-12 10:48:27,737 - ERROR - Error during input_sales execution
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 47, in input_sales
+    gf_values = _run_macro_and_get_values(paths["file_path_gf"], "GF", "B29:B31")
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 108, in _run_macro_and_get_values
+    wb = app.books.open(wb_path)
+         ^^^
+NameError: name 'app' is not defined
+2025-09-12 10:48:28,009 - INFO - === input_sales finished in 0m 2s ===
+2025-09-12 10:48:28,009 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 252, in run_sales_automation
+    sato.input_sales(input_date.day)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 47, in input_sales
+    gf_values = _run_macro_and_get_values(paths["file_path_gf"], "GF", "B29:B31")
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 108, in _run_macro_and_get_values
+    wb = app.books.open(wb_path)
+         ^^^
+NameError: name 'app' is not defined
+2025-09-12 10:48:28,010 - INFO - Start time : 2025-09-12 10:47:00
+2025-09-12 10:48:28,010 - INFO - End time   : 2025-09-12 10:48:28
+2025-09-12 10:48:28,010 - INFO - Elapsed    : 1m 27s
+2025-09-12 10:48:28,010 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 277, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 252, in run_sales_automation
+    sato.input_sales(input_date.day)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 47, in input_sales
+    gf_values = _run_macro_and_get_values(paths["file_path_gf"], "GF", "B29:B31")
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 108, in _run_macro_and_get_values
+    wb = app.books.open(wb_path)
+         ^^^
+NameError: name 'app' is not defined
+2025-09-12 10:49:27,639 - INFO - === Sales automation started ===
+2025-09-12 10:50:50,079 - INFO - === input_sales started for day 11 ===
+2025-09-12 10:50:50,960 - INFO - Opening new workbook: {filepath}
+2025-09-12 10:50:52,637 - ERROR - Error during input_sales execution
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 47, in input_sales
+    gf_values = _run_macro_and_get_values(paths["file_path_gf"], "GF", "B29:B31")
+TypeError: _run_macro_and_get_values() missing 1 required positional argument: 'cell_range'
+2025-09-12 10:50:52,962 - INFO - === input_sales finished in 0m 2s ===
+2025-09-12 10:50:52,962 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 252, in run_sales_automation
+    sato.input_sales(input_date.day)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 47, in input_sales
+    gf_values = _run_macro_and_get_values(paths["file_path_gf"], "GF", "B29:B31")
+TypeError: _run_macro_and_get_values() missing 1 required positional argument: 'cell_range'
+2025-09-12 10:50:52,963 - INFO - Start time : 2025-09-12 10:49:27
+2025-09-12 10:50:52,963 - INFO - End time   : 2025-09-12 10:50:52
+2025-09-12 10:50:52,963 - INFO - Elapsed    : 1m 25s
+2025-09-12 10:50:52,963 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 277, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 252, in run_sales_automation
+    sato.input_sales(input_date.day)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 47, in input_sales
+    gf_values = _run_macro_and_get_values(paths["file_path_gf"], "GF", "B29:B31")
+TypeError: _run_macro_and_get_values() missing 1 required positional argument: 'cell_range'
+2025-09-12 10:54:05,595 - INFO - === Sales automation started ===
+2025-09-12 10:55:31,156 - INFO - === input_sales started for day 11 ===
+2025-09-12 10:55:32,023 - INFO - Opening new workbook: {filepath}
+2025-09-12 10:55:35,488 - ERROR - Error during input_sales execution
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 53, in input_sales
+    values = _run_macro_and_get_values(
+        path, floor.upper(), "B29:B33" if floor == "1f" else "B29:B31"
+    )
+TypeError: _run_macro_and_get_values() missing 1 required positional argument: 'cell_range'
+2025-09-12 10:55:35,829 - INFO - === input_sales finished in 0m 4s ===
+2025-09-12 10:55:35,829 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 252, in run_sales_automation
+    sato.input_sales(input_date.day)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 53, in input_sales
+    values = _run_macro_and_get_values(
+        path, floor.upper(), "B29:B33" if floor == "1f" else "B29:B31"
+    )
+TypeError: _run_macro_and_get_values() missing 1 required positional argument: 'cell_range'
+2025-09-12 10:55:35,830 - INFO - Start time : 2025-09-12 10:54:05
+2025-09-12 10:55:35,830 - INFO - End time   : 2025-09-12 10:55:35
+2025-09-12 10:55:35,830 - INFO - Elapsed    : 1m 30s
+2025-09-12 10:55:35,831 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 277, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 252, in run_sales_automation
+    sato.input_sales(input_date.day)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 53, in input_sales
+    values = _run_macro_and_get_values(
+        path, floor.upper(), "B29:B33" if floor == "1f" else "B29:B31"
+    )
+TypeError: _run_macro_and_get_values() missing 1 required positional argument: 'cell_range'
+2025-09-12 10:56:24,258 - INFO - === Sales automation started ===
+2025-09-12 10:56:27,231 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 205, in run_sales_automation
+    input_date = ask_for_date()
+  File "E:\Satrio\Projects\MouseApp\main.py", line 38, in ask_for_date
+    return datetime(today.year, today.month, int(day_str))
+                                             ~~~^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2025-09-12 10:56:27,233 - INFO - Start time : 2025-09-12 10:56:24
+2025-09-12 10:56:27,233 - INFO - End time   : 2025-09-12 10:56:27
+2025-09-12 10:56:27,233 - INFO - Elapsed    : 0m 2s
+2025-09-12 10:56:27,233 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 277, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 205, in run_sales_automation
+    input_date = ask_for_date()
+  File "E:\Satrio\Projects\MouseApp\main.py", line 38, in ask_for_date
+    return datetime(today.year, today.month, int(day_str))
+                                             ~~~^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2025-09-12 10:56:34,838 - INFO - === Sales automation started ===
+2025-09-12 10:56:38,264 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 205, in run_sales_automation
+    input_date = ask_for_date()
+  File "E:\Satrio\Projects\MouseApp\main.py", line 38, in ask_for_date
+    return datetime(today.year, today.month, int(day_str))
+                                             ~~~^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'a'
+2025-09-12 10:56:38,265 - INFO - Start time : 2025-09-12 10:56:34
+2025-09-12 10:56:38,265 - INFO - End time   : 2025-09-12 10:56:38
+2025-09-12 10:56:38,265 - INFO - Elapsed    : 0m 3s
+2025-09-12 10:56:38,266 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 277, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 205, in run_sales_automation
+    input_date = ask_for_date()
+  File "E:\Satrio\Projects\MouseApp\main.py", line 38, in ask_for_date
+    return datetime(today.year, today.month, int(day_str))
+                                             ~~~^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'a'
+2025-09-12 10:56:45,699 - INFO - === Sales automation started ===
+2025-09-12 10:56:49,191 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 205, in run_sales_automation
+    input_date = ask_for_date()
+  File "E:\Satrio\Projects\MouseApp\main.py", line 38, in ask_for_date
+    return datetime(today.year, today.month, int(day_str))
+ValueError: day is out of range for month
+2025-09-12 10:56:49,193 - INFO - Start time : 2025-09-12 10:56:45
+2025-09-12 10:56:49,193 - INFO - End time   : 2025-09-12 10:56:49
+2025-09-12 10:56:49,193 - INFO - Elapsed    : 0m 3s
+2025-09-12 10:56:49,193 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 277, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 205, in run_sales_automation
+    input_date = ask_for_date()
+  File "E:\Satrio\Projects\MouseApp\main.py", line 38, in ask_for_date
+    return datetime(today.year, today.month, int(day_str))
+ValueError: day is out of range for month
+2025-09-12 10:56:57,600 - INFO - === Sales automation started ===
+2025-09-12 10:58:25,312 - INFO - === input_sales started for day 11 ===
+2025-09-12 10:58:26,090 - INFO - Opening new workbook: {filepath}
+2025-09-12 10:58:34,713 - ERROR - Error during input_sales execution
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 59, in input_sales
+    _input_sheet_sales(app, input_sheet)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 138, in _input_sheet_sales
+    wb = app.books.open(totalSales)
+                        ^^^^^^^^^^
+NameError: name 'totalSales' is not defined
+2025-09-12 10:58:34,978 - INFO - === input_sales finished in 0m 9s ===
+2025-09-12 10:58:34,978 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 252, in run_sales_automation
+    sato.input_sales(input_date.day)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 59, in input_sales
+    _input_sheet_sales(app, input_sheet)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 138, in _input_sheet_sales
+    wb = app.books.open(totalSales)
+                        ^^^^^^^^^^
+NameError: name 'totalSales' is not defined
+2025-09-12 10:58:34,979 - INFO - Start time : 2025-09-12 10:56:57
+2025-09-12 10:58:34,979 - INFO - End time   : 2025-09-12 10:58:34
+2025-09-12 10:58:34,979 - INFO - Elapsed    : 1m 37s
+2025-09-12 10:58:34,980 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 277, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 252, in run_sales_automation
+    sato.input_sales(input_date.day)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 59, in input_sales
+    _input_sheet_sales(app, input_sheet)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 138, in _input_sheet_sales
+    wb = app.books.open(totalSales)
+                        ^^^^^^^^^^
+NameError: name 'totalSales' is not defined
+2025-09-12 11:00:39,925 - INFO - === Sales automation started ===
+2025-09-12 11:02:03,389 - INFO - === input_sales started for day 11 ===
+2025-09-12 11:02:04,188 - INFO - Opening new workbook: {filepath}
+2025-09-12 11:02:12,946 - ERROR - Error during input_sales execution
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 59, in input_sales
+    _input_sheet_sales(app, input_sheet)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 138, in _input_sheet_sales
+    wb = app.books.open(paths["totalSales"])
+                        ^^^^^
+NameError: name 'paths' is not defined
+2025-09-12 11:02:13,332 - INFO - === input_sales finished in 0m 9s ===
+2025-09-12 11:02:13,333 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 252, in run_sales_automation
+    sato.input_sales(input_date.day)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 59, in input_sales
+    _input_sheet_sales(app, input_sheet)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 138, in _input_sheet_sales
+    wb = app.books.open(paths["totalSales"])
+                        ^^^^^
+NameError: name 'paths' is not defined
+2025-09-12 11:02:13,334 - INFO - Start time : 2025-09-12 11:00:39
+2025-09-12 11:02:13,334 - INFO - End time   : 2025-09-12 11:02:13
+2025-09-12 11:02:13,334 - INFO - Elapsed    : 1m 33s
+2025-09-12 11:02:13,334 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 277, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 252, in run_sales_automation
+    sato.input_sales(input_date.day)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 59, in input_sales
+    _input_sheet_sales(app, input_sheet)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 138, in _input_sheet_sales
+    wb = app.books.open(paths["totalSales"])
+                        ^^^^^
+NameError: name 'paths' is not defined
+2025-09-12 11:07:33,625 - INFO - === Sales automation started ===
+2025-09-12 11:08:58,063 - INFO - === input_sales started for day 11 ===
+2025-09-12 11:08:58,862 - INFO - Opening new workbook: {filepath}
+2025-09-12 11:09:07,496 - ERROR - Error during input_sales execution
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 59, in input_sales
+    _input_sheet_sales(app, input_sheet, paths["total_sales"])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 138, in _input_sheet_sales
+    wb = app.books.open(total_sales)
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\xlwings\main.py", line 5174, in open
+    raise FileNotFoundError("No such file: '%s'" % fullname)
+FileNotFoundError: No such file: 'C:\IRIS\SRC\totalSales.xls'
+2025-09-12 11:09:07,816 - INFO - === input_sales finished in 0m 9s ===
+2025-09-12 11:09:07,816 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 252, in run_sales_automation
+    sato.input_sales(input_date.day)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 59, in input_sales
+    _input_sheet_sales(app, input_sheet, paths["total_sales"])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 138, in _input_sheet_sales
+    wb = app.books.open(total_sales)
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\xlwings\main.py", line 5174, in open
+    raise FileNotFoundError("No such file: '%s'" % fullname)
+FileNotFoundError: No such file: 'C:\IRIS\SRC\totalSales.xls'
+2025-09-12 11:09:07,817 - INFO - Start time : 2025-09-12 11:07:33
+2025-09-12 11:09:07,817 - INFO - End time   : 2025-09-12 11:09:07
+2025-09-12 11:09:07,817 - INFO - Elapsed    : 1m 34s
+2025-09-12 11:09:07,818 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 277, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 252, in run_sales_automation
+    sato.input_sales(input_date.day)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 59, in input_sales
+    _input_sheet_sales(app, input_sheet, paths["total_sales"])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 138, in _input_sheet_sales
+    wb = app.books.open(total_sales)
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\xlwings\main.py", line 5174, in open
+    raise FileNotFoundError("No such file: '%s'" % fullname)
+FileNotFoundError: No such file: 'C:\IRIS\SRC\totalSales.xls'
+2025-09-12 11:09:40,313 - INFO - === Sales automation started ===
+2025-09-12 11:09:43,734 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 205, in run_sales_automation
+    input_date = ask_for_date()
+  File "E:\Satrio\Projects\MouseApp\main.py", line 38, in ask_for_date
+    return datetime(today.year, today.month, int(day_str))
+                                             ~~~^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2025-09-12 11:09:43,735 - INFO - Start time : 2025-09-12 11:09:40
+2025-09-12 11:09:43,735 - INFO - End time   : 2025-09-12 11:09:43
+2025-09-12 11:09:43,735 - INFO - Elapsed    : 0m 3s
+2025-09-12 11:09:43,736 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 277, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 205, in run_sales_automation
+    input_date = ask_for_date()
+  File "E:\Satrio\Projects\MouseApp\main.py", line 38, in ask_for_date
+    return datetime(today.year, today.month, int(day_str))
+                                             ~~~^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2025-09-12 11:09:51,906 - INFO - === Sales automation started ===
+2025-09-12 11:09:56,117 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 205, in run_sales_automation
+    input_date = ask_for_date()
+  File "E:\Satrio\Projects\MouseApp\main.py", line 38, in ask_for_date
+    return datetime(today.year, today.month, int(day_str))
+                                             ~~~^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2025-09-12 11:09:56,119 - INFO - Start time : 2025-09-12 11:09:51
+2025-09-12 11:09:56,119 - INFO - End time   : 2025-09-12 11:09:56
+2025-09-12 11:09:56,119 - INFO - Elapsed    : 0m 4s
+2025-09-12 11:09:56,119 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 277, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 205, in run_sales_automation
+    input_date = ask_for_date()
+  File "E:\Satrio\Projects\MouseApp\main.py", line 38, in ask_for_date
+    return datetime(today.year, today.month, int(day_str))
+                                             ~~~^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2025-09-12 11:18:51,680 - INFO - === Sales automation started ===
+2025-09-12 11:20:19,247 - INFO - === input_sales started for day 11 ===
+2025-09-12 11:20:20,179 - INFO - Opening new workbook: {filepath}
+2025-09-12 11:20:29,444 - ERROR - Error during input_sales execution
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 62, in input_sales
+    _other_revenue_sales(app, input_sheet, other_sheet, paths["all_brand"])
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 153, in _other_revenue_sales
+    other_values = get_values_other(app, all_brand,"all_brand", "M2:M5")
+                   ^^^^^^^^^^^^^^^^
+NameError: name 'get_values_other' is not defined. Did you mean: '_get_values_other'?
+2025-09-12 11:20:29,786 - INFO - === input_sales finished in 0m 10s ===
+2025-09-12 11:20:29,787 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 252, in run_sales_automation
+    sato.input_sales(input_date.day)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 62, in input_sales
+    _other_revenue_sales(app, input_sheet, other_sheet, paths["all_brand"])
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 153, in _other_revenue_sales
+    other_values = get_values_other(app, all_brand,"all_brand", "M2:M5")
+                   ^^^^^^^^^^^^^^^^
+NameError: name 'get_values_other' is not defined. Did you mean: '_get_values_other'?
+2025-09-12 11:20:29,788 - INFO - Start time : 2025-09-12 11:18:51
+2025-09-12 11:20:29,788 - INFO - End time   : 2025-09-12 11:20:29
+2025-09-12 11:20:29,789 - INFO - Elapsed    : 1m 38s
+2025-09-12 11:20:29,789 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 277, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 252, in run_sales_automation
+    sato.input_sales(input_date.day)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 62, in input_sales
+    _other_revenue_sales(app, input_sheet, other_sheet, paths["all_brand"])
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\sales_auto.py", line 153, in _other_revenue_sales
+    other_values = get_values_other(app, all_brand,"all_brand", "M2:M5")
+                   ^^^^^^^^^^^^^^^^
+NameError: name 'get_values_other' is not defined. Did you mean: '_get_values_other'?
+2025-09-12 11:20:53,340 - INFO - === Sales automation started ===
+2025-09-12 11:22:17,130 - INFO - === input_sales started for day 11 ===
+2025-09-12 11:22:17,958 - INFO - Opening new workbook: {filepath}
+2025-09-12 11:22:29,481 - INFO - Daily report saved and closed
+2025-09-12 11:22:29,830 - INFO - === input_sales finished in 0m 12s ===
+2025-09-12 11:22:30,778 - INFO - === Sales automation finished successfully ===
+2025-09-12 11:22:30,779 - INFO - Start time : 2025-09-12 11:20:53
+2025-09-12 11:22:30,779 - INFO - End time   : 2025-09-12 11:22:30
+2025-09-12 11:22:30,779 - INFO - Elapsed    : 1m 37s
+2025-09-12 13:59:28,584 - INFO - === Sales automation started ===
+2025-09-12 14:00:35,723 - INFO - === input_sales started for day 11 ===
+2025-09-12 14:00:48,797 - INFO - Daily report saved and closed
+2025-09-12 14:00:49,150 - INFO - === input_sales finished in 0m 13s ===
+2025-09-12 14:00:55,810 - INFO - === Sales automation finished successfully ===
+2025-09-12 14:00:55,810 - INFO - Start time : 2025-09-12 13:59:28
+2025-09-12 14:00:55,810 - INFO - End time   : 2025-09-12 14:00:55
+2025-09-12 14:00:55,810 - INFO - Elapsed    : 1m 27s
+2025-09-14 22:08:13,522 - INFO - === Sales automation started ===
+2025-09-14 22:09:29,556 - INFO - === input_sales started for day 12 ===
+2025-09-14 22:09:44,700 - INFO - Daily report saved and closed
+2025-09-14 22:09:45,182 - INFO - === input_sales finished in 0m 15s ===
+2025-09-14 22:11:17,821 - INFO - === Sales automation finished successfully ===
+2025-09-14 22:11:17,821 - INFO - Start time : 2025-09-14 22:08:13
+2025-09-14 22:11:17,821 - INFO - End time   : 2025-09-14 22:11:17
+2025-09-14 22:11:17,821 - INFO - Elapsed    : 3m 4s
+2025-09-14 22:12:13,339 - INFO - === Sales automation started ===
+2025-09-14 22:13:32,815 - INFO - === input_sales started for day 13 ===
+2025-09-14 22:13:47,380 - INFO - Daily report saved and closed
+2025-09-14 22:13:47,803 - INFO - === input_sales finished in 0m 14s ===
+2025-09-14 22:13:52,137 - INFO - === Sales automation finished successfully ===
+2025-09-14 22:13:52,137 - INFO - Start time : 2025-09-14 22:12:13
+2025-09-14 22:13:52,137 - INFO - End time   : 2025-09-14 22:13:52
+2025-09-14 22:13:52,137 - INFO - Elapsed    : 1m 38s
+2025-09-14 22:14:37,702 - INFO - === Sales automation started ===
+2025-09-14 22:15:45,609 - INFO - === input_sales started for day 14 ===
+2025-09-14 22:15:59,915 - INFO - Daily report saved and closed
+2025-09-14 22:16:00,324 - INFO - === input_sales finished in 0m 14s ===
+2025-09-14 22:16:15,566 - INFO - === Sales automation finished successfully ===
+2025-09-14 22:16:15,567 - INFO - Start time : 2025-09-14 22:14:37
+2025-09-14 22:16:15,567 - INFO - End time   : 2025-09-14 22:16:15
+2025-09-14 22:16:15,567 - INFO - Elapsed    : 1m 37s
+2025-09-15 07:52:38,455 - INFO - Script started
+2025-09-15 07:52:39,030 - INFO - Opening new workbook.
+2025-09-15 07:52:39,037 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 99, in <module>
+    main()
+    ~~~~^^
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 92, in main
+    daily_2(daily_sales_report, input_sheet, revenue_sheet)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 45, in daily_2
+    wb = get_or_open_wb(final_filename)
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 22, in get_or_open_wb
+    return xw.books.open(filepath)
+           ~~~~~~~~~~~~~^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\xlwings\main.py", line 5174, in open
+    raise FileNotFoundError("No such file: '%s'" % fullname)
+FileNotFoundError: No such file: 'E:\1. Sales Strategy\2025\1. DAILY REPORT\250914★ 25년 9월 해외점포 실적동향 (자카르탇점).xlsx'
+2025-09-15 07:55:38,840 - INFO - Script started
+2025-09-15 07:55:39,288 - INFO - Opening new workbook.
+2025-09-15 07:55:40,221 - INFO - Opening new workbook.
+2025-09-15 07:55:43,243 - INFO - Script running succesfully, finished in 4.40 seconds
+2025-09-15 08:03:22,320 - INFO - === Sales automation started ===
+2025-09-15 08:04:45,461 - INFO - === input_sales started for day 13 ===
+2025-09-15 08:04:46,323 - INFO - Workbook already open.
+2025-09-15 08:04:55,601 - INFO - Daily report saved and closed
+2025-09-15 08:04:56,045 - INFO - === input_sales finished in 0m 10s ===
+2025-09-15 08:04:59,696 - INFO - === Sales automation finished successfully ===
+2025-09-15 08:04:59,696 - INFO - Start time : 2025-09-15 08:03:22
+2025-09-15 08:04:59,696 - INFO - End time   : 2025-09-15 08:04:59
+2025-09-15 08:04:59,696 - INFO - Elapsed    : 1m 37s
+2025-09-16 07:13:22,043 - INFO - === Sales automation started ===
+2025-09-16 07:14:39,343 - INFO - === input_sales started for day 15 ===
+2025-09-16 07:14:53,790 - INFO - Daily report saved and closed
+2025-09-16 07:14:54,392 - INFO - === input_sales finished in 0m 15s ===
+2025-09-16 07:15:47,445 - INFO - === Sales automation finished successfully ===
+2025-09-16 07:15:47,446 - INFO - Start time : 2025-09-16 07:13:22
+2025-09-16 07:15:47,446 - INFO - End time   : 2025-09-16 07:15:47
+2025-09-16 07:15:47,446 - INFO - Elapsed    : 2m 25s
+2025-09-16 07:25:02,398 - INFO - Script started
+2025-09-16 07:25:02,879 - INFO - Opening new workbook.
+2025-09-16 07:25:03,761 - INFO - Workbook already open.
+2025-09-16 07:25:04,607 - INFO - Script running succesfully, finished in 2.21 seconds
+2025-09-17 08:15:22,827 - INFO - === Sales automation started ===
+2025-09-17 08:16:32,211 - INFO - === input_sales started for day 16 ===
+2025-09-17 08:16:45,948 - INFO - Daily report saved and closed
+2025-09-17 08:16:46,390 - INFO - === input_sales finished in 0m 14s ===
+2025-09-17 08:16:47,971 - INFO - === Sales automation finished successfully ===
+2025-09-17 08:16:47,971 - INFO - Start time : 2025-09-17 08:15:22
+2025-09-17 08:16:47,972 - INFO - End time   : 2025-09-17 08:16:47
+2025-09-17 08:16:47,972 - INFO - Elapsed    : 1m 25s
+2025-09-17 08:32:45,422 - INFO - Script started
+2025-09-17 08:32:46,154 - INFO - Opening new workbook.
+2025-09-17 08:32:47,151 - INFO - Workbook already open.
+2025-09-17 08:32:48,094 - INFO - Script running succesfully, finished in 2.67 seconds
+2025-09-18 08:22:23,573 - INFO - === Sales automation started ===
+2025-09-18 08:23:05,665 - INFO - Start time : 2025-09-18 08:22:23
+2025-09-18 08:23:05,666 - INFO - End time   : 2025-09-18 08:23:05
+2025-09-18 08:23:05,666 - INFO - Elapsed    : 0m 42s
+2025-09-18 08:23:16,669 - INFO - === Sales automation started ===
+2025-09-18 08:24:19,996 - INFO - === input_sales started for day 17 ===
+2025-09-18 08:24:36,043 - INFO - Daily report saved and closed
+2025-09-18 08:24:36,512 - INFO - === input_sales finished in 0m 16s ===
+2025-09-18 08:25:09,731 - INFO - === Sales automation finished successfully ===
+2025-09-18 08:25:09,731 - INFO - Start time : 2025-09-18 08:23:16
+2025-09-18 08:25:09,732 - INFO - End time   : 2025-09-18 08:25:09
+2025-09-18 08:25:09,732 - INFO - Elapsed    : 1m 53s
+2025-09-18 08:27:56,623 - INFO - Script started
+2025-09-18 08:27:57,342 - INFO - Opening new workbook.
+2025-09-18 08:27:58,311 - INFO - Workbook already open.
+2025-09-18 08:27:59,348 - INFO - Script running succesfully, finished in 2.73 seconds
