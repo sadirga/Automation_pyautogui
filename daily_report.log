@@ -760,3 +760,348 @@ FileNotFoundError: No such file: 'E:\1. Sales Strategy\2025\1. DAILY REPORT\2509
 2025-09-18 08:27:57,342 - INFO - Opening new workbook.
 2025-09-18 08:27:58,311 - INFO - Workbook already open.
 2025-09-18 08:27:59,348 - INFO - Script running succesfully, finished in 2.73 seconds
+2025-09-19 08:26:44,094 - INFO - === Sales automation started ===
+2025-09-19 08:27:48,451 - INFO - === input_sales started for day 18 ===
+2025-09-19 08:28:02,898 - INFO - Daily report saved and closed
+2025-09-19 08:28:03,185 - INFO - === input_sales finished in 0m 14s ===
+2025-09-19 08:28:05,082 - INFO - === Sales automation finished successfully ===
+2025-09-19 08:28:05,082 - INFO - Start time : 2025-09-19 08:26:44
+2025-09-19 08:28:05,082 - INFO - End time   : 2025-09-19 08:28:05
+2025-09-19 08:28:05,083 - INFO - Elapsed    : 1m 20s
+2025-09-19 08:33:35,944 - INFO - Script started
+2025-09-19 08:33:36,417 - INFO - Opening new workbook.
+2025-09-19 08:33:37,208 - INFO - Workbook already open.
+2025-09-19 08:33:37,777 - INFO - Script running succesfully, finished in 1.83 seconds
+2025-09-19 10:11:28,579 - INFO - === Sales automation started ===
+2025-09-19 10:12:34,519 - INFO - === input_sales started for day 18 ===
+2025-09-19 10:12:35,458 - INFO - Workbook already open.
+2025-09-19 10:12:44,330 - INFO - Daily report saved and closed
+2025-09-19 10:12:44,670 - INFO - === input_sales finished in 0m 10s ===
+2025-09-19 10:12:47,745 - INFO - === Sales automation finished successfully ===
+2025-09-19 10:12:47,745 - INFO - Start time : 2025-09-19 10:11:28
+2025-09-19 10:12:47,745 - INFO - End time   : 2025-09-19 10:12:47
+2025-09-19 10:12:47,745 - INFO - Elapsed    : 1m 19s
+2025-09-21 22:15:56,009 - INFO - === Sales automation started ===
+2025-09-21 22:17:11,642 - INFO - === input_sales started for day 19 ===
+2025-09-21 22:17:26,658 - INFO - Daily report saved and closed
+2025-09-21 22:17:27,152 - INFO - === input_sales finished in 0m 15s ===
+2025-09-21 22:17:29,545 - INFO - === Sales automation finished successfully ===
+2025-09-21 22:17:29,546 - INFO - Start time : 2025-09-21 22:15:56
+2025-09-21 22:17:29,546 - INFO - End time   : 2025-09-21 22:17:29
+2025-09-21 22:17:29,546 - INFO - Elapsed    : 1m 33s
+2025-09-21 22:17:48,634 - INFO - === Sales automation started ===
+2025-09-21 22:18:56,383 - INFO - === input_sales started for day 20 ===
+2025-09-21 22:19:10,959 - INFO - Daily report saved and closed
+2025-09-21 22:19:11,318 - INFO - === input_sales finished in 0m 14s ===
+2025-09-21 22:19:14,884 - INFO - === Sales automation finished successfully ===
+2025-09-21 22:19:14,884 - INFO - Start time : 2025-09-21 22:17:48
+2025-09-21 22:19:14,885 - INFO - End time   : 2025-09-21 22:19:14
+2025-09-21 22:19:14,885 - INFO - Elapsed    : 1m 26s
+2025-09-21 22:20:17,929 - INFO - === Sales automation started ===
+2025-09-21 22:21:24,203 - INFO - === input_sales started for day 21 ===
+2025-09-21 22:21:38,542 - INFO - Daily report saved and closed
+2025-09-21 22:21:39,004 - INFO - === input_sales finished in 0m 14s ===
+2025-09-21 22:21:42,445 - INFO - === Sales automation finished successfully ===
+2025-09-21 22:21:42,446 - INFO - Start time : 2025-09-21 22:20:17
+2025-09-21 22:21:42,446 - INFO - End time   : 2025-09-21 22:21:42
+2025-09-21 22:21:42,446 - INFO - Elapsed    : 1m 24s
+2025-09-21 22:22:49,717 - INFO - Script started
+2025-09-21 22:22:50,076 - INFO - Opening new workbook.
+2025-09-21 22:22:50,087 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 99, in <module>
+    main()
+    ~~~~^^
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 92, in main
+    daily_2(daily_sales_report, input_sheet, revenue_sheet)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 45, in daily_2
+    wb = get_or_open_wb(final_filename)
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 22, in get_or_open_wb
+    return xw.books.open(filepath)
+           ~~~~~~~~~~~~~^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\xlwings\main.py", line 5174, in open
+    raise FileNotFoundError("No such file: '%s'" % fullname)
+FileNotFoundError: No such file: 'E:\1. Sales Strategy\2025\1. DAILY REPORT\250920★ 25년 9월 해외점포 실적동향 (자카르탇점).xlsx'
+2025-09-23 08:08:01,160 - INFO - === Sales automation started ===
+2025-09-23 08:09:15,782 - INFO - === input_sales started for day 22 ===
+2025-09-23 08:09:28,523 - INFO - Daily report saved and closed
+2025-09-23 08:09:28,836 - INFO - === input_sales finished in 0m 13s ===
+2025-09-23 08:09:30,763 - INFO - === Sales automation finished successfully ===
+2025-09-23 08:09:30,763 - INFO - Start time : 2025-09-23 08:08:01
+2025-09-23 08:09:30,763 - INFO - End time   : 2025-09-23 08:09:30
+2025-09-23 08:09:30,763 - INFO - Elapsed    : 1m 29s
+2025-09-23 08:11:07,709 - INFO - Script started
+2025-09-23 08:11:08,169 - INFO - Opening new workbook.
+2025-09-23 08:11:09,085 - INFO - Workbook already open.
+2025-09-23 08:11:09,635 - INFO - Script running succesfully, finished in 1.93 seconds
+2025-09-24 08:26:35,443 - INFO - === Sales automation started ===
+2025-09-24 08:27:35,450 - INFO - === input_sales started for day 23 ===
+2025-09-24 08:27:48,469 - INFO - Daily report saved and closed
+2025-09-24 08:27:48,825 - INFO - === input_sales finished in 0m 13s ===
+2025-09-24 08:27:50,789 - INFO - === Sales automation finished successfully ===
+2025-09-24 08:27:50,790 - INFO - Start time : 2025-09-24 08:26:35
+2025-09-24 08:27:50,790 - INFO - End time   : 2025-09-24 08:27:50
+2025-09-24 08:27:50,790 - INFO - Elapsed    : 1m 15s
+2025-09-24 08:34:46,873 - INFO - Script started
+2025-09-24 08:34:47,475 - INFO - Opening new workbook.
+2025-09-24 08:34:48,421 - INFO - Workbook already open.
+2025-09-24 08:34:49,137 - INFO - Script running succesfully, finished in 2.26 seconds
+2025-09-25 08:33:58,691 - INFO - === Sales automation started ===
+2025-09-25 08:34:23,242 - INFO - Start time : 2025-09-25 08:33:58
+2025-09-25 08:34:23,242 - INFO - End time   : 2025-09-25 08:34:23
+2025-09-25 08:34:23,243 - INFO - Elapsed    : 0m 24s
+2025-09-25 08:34:25,143 - INFO - === Sales automation started ===
+2025-09-25 08:34:40,261 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 213, in run_sales_automation
+    _set_date_and_options(input_day_str)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 151, in _set_date_and_options
+    pyautogui.moveTo(*get_tuple("COORDS", "option_button"), duration=0.3)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\pyautogui\__init__.py", line 593, in wrapper
+    failSafeCheck()
+    ~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\pyautogui\__init__.py", line 1734, in failSafeCheck
+    raise FailSafeException(
+        "PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED."
+    )
+pyautogui.FailSafeException: PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED.
+2025-09-25 08:34:40,274 - INFO - Start time : 2025-09-25 08:34:25
+2025-09-25 08:34:40,274 - INFO - End time   : 2025-09-25 08:34:40
+2025-09-25 08:34:40,274 - INFO - Elapsed    : 0m 15s
+2025-09-25 08:34:40,274 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 277, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 213, in run_sales_automation
+    _set_date_and_options(input_day_str)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 151, in _set_date_and_options
+    pyautogui.moveTo(*get_tuple("COORDS", "option_button"), duration=0.3)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\pyautogui\__init__.py", line 593, in wrapper
+    failSafeCheck()
+    ~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\pyautogui\__init__.py", line 1734, in failSafeCheck
+    raise FailSafeException(
+        "PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED."
+    )
+pyautogui.FailSafeException: PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED.
+2025-09-25 08:34:54,268 - INFO - === Sales automation started ===
+2025-09-25 08:35:56,452 - INFO - === input_sales started for day 24 ===
+2025-09-25 08:36:10,633 - INFO - Daily report saved and closed
+2025-09-25 08:36:11,001 - INFO - === input_sales finished in 0m 14s ===
+2025-09-25 08:36:12,689 - INFO - === Sales automation finished successfully ===
+2025-09-25 08:36:12,690 - INFO - Start time : 2025-09-25 08:34:54
+2025-09-25 08:36:12,690 - INFO - End time   : 2025-09-25 08:36:12
+2025-09-25 08:36:12,690 - INFO - Elapsed    : 1m 18s
+2025-09-25 08:40:30,462 - INFO - Script started
+2025-09-25 08:40:31,049 - INFO - Opening new workbook.
+2025-09-25 08:40:31,966 - INFO - Workbook already open.
+2025-09-25 08:40:32,761 - INFO - Script running succesfully, finished in 2.30 seconds
+2025-09-26 08:22:07,081 - INFO - === Sales automation started ===
+2025-09-26 08:22:33,427 - INFO - Start time : 2025-09-26 08:22:07
+2025-09-26 08:22:33,427 - INFO - End time   : 2025-09-26 08:22:33
+2025-09-26 08:22:33,428 - INFO - Elapsed    : 0m 26s
+2025-09-26 08:22:37,339 - INFO - === Sales automation started ===
+2025-09-26 08:23:42,700 - INFO - === input_sales started for day 25 ===
+2025-09-26 08:23:56,778 - INFO - Daily report saved and closed
+2025-09-26 08:23:57,178 - INFO - === input_sales finished in 0m 14s ===
+2025-09-26 08:24:01,428 - INFO - === Sales automation finished successfully ===
+2025-09-26 08:24:01,428 - INFO - Start time : 2025-09-26 08:22:37
+2025-09-26 08:24:01,428 - INFO - End time   : 2025-09-26 08:24:01
+2025-09-26 08:24:01,428 - INFO - Elapsed    : 1m 24s
+2025-09-26 08:26:05,650 - INFO - Script started
+2025-09-26 08:26:06,303 - INFO - Opening new workbook.
+2025-09-26 08:26:07,159 - INFO - Workbook already open.
+2025-09-26 08:26:08,073 - INFO - Script running succesfully, finished in 2.42 seconds
+2025-09-28 22:56:38,485 - INFO - === Sales automation started ===
+2025-09-28 22:57:28,715 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 209, in run_sales_automation
+    run_app_and_login(app_path, app_name)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 88, in run_app_and_login
+    wait_for_pixel(x, y, rgb) # adjustable in config to match other device
+    ~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 63, in wait_for_pixel
+    raise TimeoutError(f"UI not ready after {timeout}s at pixel {x},{y}")
+TimeoutError: UI not ready after 30s at pixel 1256,622
+2025-09-28 22:57:28,727 - INFO - Start time : 2025-09-28 22:56:38
+2025-09-28 22:57:28,727 - INFO - End time   : 2025-09-28 22:57:28
+2025-09-28 22:57:28,727 - INFO - Elapsed    : 0m 50s
+2025-09-28 22:57:28,728 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 277, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 209, in run_sales_automation
+    run_app_and_login(app_path, app_name)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 88, in run_app_and_login
+    wait_for_pixel(x, y, rgb) # adjustable in config to match other device
+    ~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 63, in wait_for_pixel
+    raise TimeoutError(f"UI not ready after {timeout}s at pixel {x},{y}")
+TimeoutError: UI not ready after 30s at pixel 1256,622
+2025-09-28 22:58:02,493 - INFO - === Sales automation started ===
+2025-09-28 22:58:39,885 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 209, in run_sales_automation
+    run_app_and_login(app_path, app_name)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 88, in run_app_and_login
+    wait_for_pixel(x, y, rgb) # adjustable in config to match other device
+    ~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 63, in wait_for_pixel
+    raise TimeoutError(f"UI not ready after {timeout}s at pixel {x},{y}")
+TimeoutError: UI not ready after 30s at pixel 1256,622
+2025-09-28 22:58:39,890 - INFO - Start time : 2025-09-28 22:58:02
+2025-09-28 22:58:39,890 - INFO - End time   : 2025-09-28 22:58:39
+2025-09-28 22:58:39,900 - INFO - Elapsed    : 0m 37s
+2025-09-28 22:58:39,901 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 277, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 209, in run_sales_automation
+    run_app_and_login(app_path, app_name)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 88, in run_app_and_login
+    wait_for_pixel(x, y, rgb) # adjustable in config to match other device
+    ~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 63, in wait_for_pixel
+    raise TimeoutError(f"UI not ready after {timeout}s at pixel {x},{y}")
+TimeoutError: UI not ready after 30s at pixel 1256,622
+2025-09-28 23:00:12,131 - INFO - === Sales automation started ===
+2025-09-28 23:00:47,481 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 209, in run_sales_automation
+    run_app_and_login(app_path, app_name)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 88, in run_app_and_login
+    wait_for_pixel(x, y, rgb) # adjustable in config to match other device
+    ~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 63, in wait_for_pixel
+    raise TimeoutError(f"UI not ready after {timeout}s at pixel {x},{y}")
+TimeoutError: UI not ready after 30s at pixel 1256,622
+2025-09-28 23:00:47,483 - INFO - Start time : 2025-09-28 23:00:12
+2025-09-28 23:00:47,483 - INFO - End time   : 2025-09-28 23:00:47
+2025-09-28 23:00:47,483 - INFO - Elapsed    : 0m 35s
+2025-09-28 23:00:47,484 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 277, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 209, in run_sales_automation
+    run_app_and_login(app_path, app_name)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 88, in run_app_and_login
+    wait_for_pixel(x, y, rgb) # adjustable in config to match other device
+    ~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 63, in wait_for_pixel
+    raise TimeoutError(f"UI not ready after {timeout}s at pixel {x},{y}")
+TimeoutError: UI not ready after 30s at pixel 1256,622
+2025-09-28 23:01:18,834 - INFO - === Sales automation started ===
+2025-09-28 23:01:55,784 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 209, in run_sales_automation
+    run_app_and_login(app_path, app_name)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 88, in run_app_and_login
+    wait_for_pixel(x, y, rgb) # adjustable in config to match other device
+    ~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 63, in wait_for_pixel
+    raise TimeoutError(f"UI not ready after {timeout}s at pixel {x},{y}")
+TimeoutError: UI not ready after 30s at pixel 1256,622
+2025-09-28 23:01:55,788 - INFO - Start time : 2025-09-28 23:01:18
+2025-09-28 23:01:55,788 - INFO - End time   : 2025-09-28 23:01:55
+2025-09-28 23:01:55,789 - INFO - Elapsed    : 0m 36s
+2025-09-28 23:01:55,789 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 277, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 209, in run_sales_automation
+    run_app_and_login(app_path, app_name)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 88, in run_app_and_login
+    wait_for_pixel(x, y, rgb) # adjustable in config to match other device
+    ~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 63, in wait_for_pixel
+    raise TimeoutError(f"UI not ready after {timeout}s at pixel {x},{y}")
+TimeoutError: UI not ready after 30s at pixel 1256,622
+2025-09-28 23:08:14,009 - INFO - === Sales automation started ===
+2025-09-28 23:08:49,847 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 209, in run_sales_automation
+    run_app_and_login(app_path, app_name)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 88, in run_app_and_login
+    wait_for_pixel(x, y, rgb) # adjustable in config to match other device
+    ~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 63, in wait_for_pixel
+    raise TimeoutError(f"UI not ready after {timeout}s at pixel {x},{y}")
+TimeoutError: UI not ready after 30s at pixel 709,421
+2025-09-28 23:08:49,851 - INFO - Start time : 2025-09-28 23:08:14
+2025-09-28 23:08:49,851 - INFO - End time   : 2025-09-28 23:08:49
+2025-09-28 23:08:49,851 - INFO - Elapsed    : 0m 35s
+2025-09-28 23:08:49,852 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 277, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 209, in run_sales_automation
+    run_app_and_login(app_path, app_name)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 88, in run_app_and_login
+    wait_for_pixel(x, y, rgb) # adjustable in config to match other device
+    ~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 63, in wait_for_pixel
+    raise TimeoutError(f"UI not ready after {timeout}s at pixel {x},{y}")
+TimeoutError: UI not ready after 30s at pixel 709,421
+2025-09-28 23:09:42,591 - INFO - === Sales automation started ===
+2025-09-28 23:10:47,432 - INFO - === input_sales started for day 26 ===
+2025-09-28 23:11:01,973 - INFO - Daily report saved and closed
+2025-09-28 23:11:02,380 - INFO - === input_sales finished in 0m 14s ===
+2025-09-28 23:11:04,733 - INFO - === Sales automation finished successfully ===
+2025-09-28 23:11:04,733 - INFO - Start time : 2025-09-28 23:09:42
+2025-09-28 23:11:04,733 - INFO - End time   : 2025-09-28 23:11:04
+2025-09-28 23:11:04,734 - INFO - Elapsed    : 1m 22s
+2025-09-28 23:11:08,856 - INFO - === Sales automation started ===
+2025-09-28 23:12:18,233 - INFO - === input_sales started for day 27 ===
+2025-09-28 23:12:32,080 - INFO - Daily report saved and closed
+2025-09-28 23:12:32,465 - INFO - === input_sales finished in 0m 14s ===
+2025-09-28 23:12:40,056 - INFO - === Sales automation finished successfully ===
+2025-09-28 23:12:40,056 - INFO - Start time : 2025-09-28 23:11:08
+2025-09-28 23:12:40,056 - INFO - End time   : 2025-09-28 23:12:40
+2025-09-28 23:12:40,057 - INFO - Elapsed    : 1m 31s
+2025-09-28 23:12:44,854 - INFO - === Sales automation started ===
+2025-09-28 23:13:51,617 - INFO - === input_sales started for day 28 ===
+2025-09-28 23:14:05,541 - INFO - Daily report saved and closed
+2025-09-28 23:14:06,006 - INFO - === input_sales finished in 0m 14s ===
+2025-09-28 23:14:38,250 - INFO - === Sales automation finished successfully ===
+2025-09-28 23:14:38,251 - INFO - Start time : 2025-09-28 23:12:44
+2025-09-28 23:14:38,251 - INFO - End time   : 2025-09-28 23:14:38
+2025-09-28 23:14:38,251 - INFO - Elapsed    : 1m 53s
+2025-09-28 23:15:00,564 - INFO - Script started
+2025-09-28 23:15:01,013 - INFO - Opening new workbook.
+2025-09-28 23:15:01,018 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 99, in <module>
+    main()
+    ~~~~^^
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 92, in main
+    daily_2(daily_sales_report, input_sheet, revenue_sheet)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 45, in daily_2
+    wb = get_or_open_wb(final_filename)
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 22, in get_or_open_wb
+    return xw.books.open(filepath)
+           ~~~~~~~~~~~~~^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\xlwings\main.py", line 5174, in open
+    raise FileNotFoundError("No such file: '%s'" % fullname)
+FileNotFoundError: No such file: 'E:\1. Sales Strategy\2025\1. DAILY REPORT\250927★ 25년 9월 해외점포 실적동향 (자카르탇점).xlsx'

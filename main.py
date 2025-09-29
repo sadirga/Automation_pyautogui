@@ -212,7 +212,7 @@ def run_sales_automation():
         _open_sales_analysis()
         _set_date_and_options(input_day_str)
         
-        # Saving the necessary values
+        # Saving the front to get cust. transactions and avg cust. transactions.
         pyautogui.press("F8")
         time.sleep(1)
         pyautogui.typewrite(str("total_sales"), interval = 0.05)
@@ -242,7 +242,7 @@ def run_sales_automation():
         
         # MenuOpn
         pyautogui.moveTo(*get_tuple("COORDS", "menu_open"), duration=0.1)
-        time.sleep(0.5)
+        time.sleep(0.5  )
         pyautogui.click()
         
         # Sales Report
