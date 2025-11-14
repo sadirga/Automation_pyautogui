@@ -1105,3 +1105,898 @@ Traceback (most recent call last):
   File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\xlwings\main.py", line 5174, in open
     raise FileNotFoundError("No such file: '%s'" % fullname)
 FileNotFoundError: No such file: 'E:\1. Sales Strategy\2025\1. DAILY REPORT\250927★ 25년 9월 해외점포 실적동향 (자카르탇점).xlsx'
+2025-09-30 08:51:25,689 - INFO - === Sales automation started ===
+2025-09-30 08:52:30,744 - INFO - === input_sales started for day 29 ===
+2025-09-30 08:52:31,714 - INFO - Workbook already open.
+2025-09-30 08:52:40,281 - INFO - Daily report saved and closed
+2025-09-30 08:52:40,572 - INFO - === input_sales finished in 0m 9s ===
+2025-09-30 08:52:41,730 - INFO - === Sales automation finished successfully ===
+2025-09-30 08:52:41,730 - INFO - Start time : 2025-09-30 08:51:25
+2025-09-30 08:52:41,731 - INFO - End time   : 2025-09-30 08:52:41
+2025-09-30 08:52:41,731 - INFO - Elapsed    : 1m 16s
+2025-09-30 08:54:24,924 - INFO - Script started
+2025-09-30 08:54:25,351 - INFO - Opening new workbook.
+2025-09-30 08:54:26,268 - INFO - Workbook already open.
+2025-09-30 08:54:26,875 - INFO - Script running succesfully, finished in 1.95 seconds
+2025-10-01 08:16:27,876 - INFO - === Sales automation started ===
+2025-10-01 08:16:54,246 - INFO - Start time : 2025-10-01 08:16:27
+2025-10-01 08:16:54,247 - INFO - End time   : 2025-10-01 08:16:54
+2025-10-01 08:16:54,247 - INFO - Elapsed    : 0m 26s
+2025-10-01 08:17:56,707 - INFO - === Sales automation started ===
+2025-10-01 08:18:57,365 - INFO - === input_sales started for day 30 ===
+2025-10-01 08:19:11,152 - INFO - Daily report saved and closed
+2025-10-01 08:19:11,424 - INFO - === input_sales finished in 0m 14s ===
+2025-10-01 08:19:26,131 - INFO - === Sales automation finished successfully ===
+2025-10-01 08:19:26,131 - INFO - Start time : 2025-10-01 08:17:56
+2025-10-01 08:19:26,131 - INFO - End time   : 2025-10-01 08:19:26
+2025-10-01 08:19:26,131 - INFO - Elapsed    : 1m 29s
+2025-10-01 08:48:12,057 - INFO - === Sales automation started ===
+2025-10-01 08:48:28,128 - INFO - Start time : 2025-10-01 08:48:12
+2025-10-01 08:48:28,128 - INFO - End time   : 2025-10-01 08:48:28
+2025-10-01 08:48:28,128 - INFO - Elapsed    : 0m 16s
+2025-10-02 08:12:34,980 - INFO - === Sales automation started ===
+2025-10-02 08:13:50,421 - INFO - === input_sales started for day 1 ===
+2025-10-02 08:14:04,896 - INFO - Daily report saved and closed
+2025-10-02 08:14:05,307 - INFO - === input_sales finished in 0m 14s ===
+2025-10-02 08:14:07,059 - INFO - === Sales automation finished successfully ===
+2025-10-02 08:14:07,059 - INFO - Start time : 2025-10-02 08:12:34
+2025-10-02 08:14:07,059 - INFO - End time   : 2025-10-02 08:14:07
+2025-10-02 08:14:07,059 - INFO - Elapsed    : 1m 32s
+2025-10-02 08:20:18,998 - INFO - Script started
+2025-10-02 08:20:19,966 - INFO - Opening new workbook.
+2025-10-02 08:20:19,977 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 99, in <module>
+    main()
+    ~~~~^^
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 92, in main
+    daily_2(daily_sales_report, input_sheet, revenue_sheet)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 45, in daily_2
+    wb = get_or_open_wb(final_filename)
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 22, in get_or_open_wb
+    return xw.books.open(filepath)
+           ~~~~~~~~~~~~~^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\xlwings\main.py", line 5174, in open
+    raise FileNotFoundError("No such file: '%s'" % fullname)
+FileNotFoundError: No such file: 'E:\1. Sales Strategy\2025\1. DAILY REPORT\251001★ 25년 10월 해외점포 실적동향 (자카르탇점).xlsx'
+2025-10-02 08:20:36,471 - INFO - Script started
+2025-10-02 08:20:37,330 - INFO - Opening new workbook.
+2025-10-02 08:20:38,376 - INFO - Workbook already open.
+2025-10-02 08:20:39,080 - INFO - Script running succesfully, finished in 2.61 seconds
+2025-10-03 08:22:42,379 - INFO - === Sales automation started ===
+2025-10-03 08:23:52,212 - INFO - === input_sales started for day 2 ===
+2025-10-03 08:24:06,159 - INFO - Daily report saved and closed
+2025-10-03 08:24:06,582 - INFO - === input_sales finished in 0m 14s ===
+2025-10-03 08:24:08,620 - INFO - === Sales automation finished successfully ===
+2025-10-03 08:24:08,621 - INFO - Start time : 2025-10-03 08:22:42
+2025-10-03 08:24:08,621 - INFO - End time   : 2025-10-03 08:24:08
+2025-10-03 08:24:08,621 - INFO - Elapsed    : 1m 26s
+2025-10-03 08:29:33,698 - INFO - Script started
+2025-10-03 08:29:34,717 - INFO - Opening new workbook.
+2025-10-03 08:29:35,909 - INFO - Workbook already open.
+2025-10-03 08:29:36,923 - INFO - Script running succesfully, finished in 3.23 seconds
+2025-10-05 21:45:48,334 - INFO - === Sales automation started ===
+2025-10-05 21:47:13,596 - INFO - === input_sales started for day 3 ===
+2025-10-05 21:47:28,956 - INFO - Daily report saved and closed
+2025-10-05 21:47:29,642 - INFO - === input_sales finished in 0m 16s ===
+2025-10-05 21:47:39,339 - INFO - === Sales automation finished successfully ===
+2025-10-05 21:47:39,339 - INFO - Start time : 2025-10-05 21:45:48
+2025-10-05 21:47:39,339 - INFO - End time   : 2025-10-05 21:47:39
+2025-10-05 21:47:39,340 - INFO - Elapsed    : 1m 51s
+2025-10-05 21:47:52,991 - INFO - === Sales automation started ===
+2025-10-05 21:49:07,977 - INFO - === input_sales started for day 4 ===
+2025-10-05 21:49:21,752 - INFO - Daily report saved and closed
+2025-10-05 21:49:22,394 - INFO - === input_sales finished in 0m 14s ===
+2025-10-05 21:49:31,885 - INFO - === Sales automation finished successfully ===
+2025-10-05 21:49:31,885 - INFO - Start time : 2025-10-05 21:47:52
+2025-10-05 21:49:31,885 - INFO - End time   : 2025-10-05 21:49:31
+2025-10-05 21:49:31,886 - INFO - Elapsed    : 1m 38s
+2025-10-05 21:58:34,900 - INFO - Script started
+2025-10-05 21:58:35,551 - INFO - Opening new workbook.
+2025-10-05 21:58:36,438 - INFO - Workbook already open.
+2025-10-05 21:58:37,266 - INFO - Script running succesfully, finished in 2.37 seconds
+2025-10-05 22:20:05,156 - INFO - === Sales automation started ===
+2025-10-05 22:21:13,721 - INFO - === input_sales started for day 5 ===
+2025-10-05 22:21:14,732 - INFO - Workbook already open.
+2025-10-05 22:21:23,381 - INFO - Daily report saved and closed
+2025-10-05 22:21:23,855 - INFO - === input_sales finished in 0m 10s ===
+2025-10-05 22:21:29,175 - INFO - === Sales automation finished successfully ===
+2025-10-05 22:21:29,175 - INFO - Start time : 2025-10-05 22:20:05
+2025-10-05 22:21:29,175 - INFO - End time   : 2025-10-05 22:21:29
+2025-10-05 22:21:29,175 - INFO - Elapsed    : 1m 24s
+2025-10-07 08:33:32,777 - INFO - === Sales automation started ===
+2025-10-07 08:34:38,313 - INFO - === input_sales started for day 6 ===
+2025-10-07 08:34:51,689 - INFO - Daily report saved and closed
+2025-10-07 08:34:52,000 - INFO - === input_sales finished in 0m 13s ===
+2025-10-07 08:34:53,909 - INFO - === Sales automation finished successfully ===
+2025-10-07 08:34:53,909 - INFO - Start time : 2025-10-07 08:33:32
+2025-10-07 08:34:53,909 - INFO - End time   : 2025-10-07 08:34:53
+2025-10-07 08:34:53,909 - INFO - Elapsed    : 1m 21s
+2025-10-07 08:42:52,046 - INFO - Script started
+2025-10-07 08:42:52,693 - INFO - Opening new workbook.
+2025-10-07 08:42:53,656 - INFO - Workbook already open.
+2025-10-07 08:42:54,357 - INFO - Script running succesfully, finished in 2.31 seconds
+2025-10-08 08:16:12,383 - INFO - === Sales automation started ===
+2025-10-08 08:17:17,073 - INFO - === input_sales started for day 7 ===
+2025-10-08 08:17:31,255 - INFO - Daily report saved and closed
+2025-10-08 08:17:31,671 - INFO - === input_sales finished in 0m 14s ===
+2025-10-08 08:17:34,139 - INFO - === Sales automation finished successfully ===
+2025-10-08 08:17:34,139 - INFO - Start time : 2025-10-08 08:16:12
+2025-10-08 08:17:34,139 - INFO - End time   : 2025-10-08 08:17:34
+2025-10-08 08:17:34,140 - INFO - Elapsed    : 1m 21s
+2025-10-08 08:22:43,256 - INFO - Script started
+2025-10-08 08:22:43,967 - INFO - Opening new workbook.
+2025-10-08 08:22:43,980 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 99, in <module>
+    main()
+    ~~~~^^
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 92, in main
+    daily_2(daily_sales_report, input_sheet, revenue_sheet)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 45, in daily_2
+    wb = get_or_open_wb(final_filename)
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 22, in get_or_open_wb
+    return xw.books.open(filepath)
+           ~~~~~~~~~~~~~^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\xlwings\main.py", line 5174, in open
+    raise FileNotFoundError("No such file: '%s'" % fullname)
+FileNotFoundError: No such file: 'E:\1. Sales Strategy\2025\1. DAILY REPORT\251007★ 25년 10월 해외점포 실적동향 (자카르탇점).xlsx'
+2025-10-08 08:22:55,235 - INFO - Script started
+2025-10-08 08:22:56,026 - INFO - Opening new workbook.
+2025-10-08 08:22:57,083 - INFO - Workbook already open.
+2025-10-08 08:22:57,794 - INFO - Script running succesfully, finished in 2.56 seconds
+2025-10-09 07:25:31,402 - INFO - === Sales automation started ===
+2025-10-09 07:26:14,117 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 212, in run_sales_automation
+    _open_sales_analysis()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 100, in _open_sales_analysis
+    pyautogui.moveTo(*get_tuple("COORDS", key), duration=0.2)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\pyautogui\__init__.py", line 594, in wrapper
+    returnVal = wrappedFunction(*args, **kwargs)
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\pyautogui\__init__.py", line 1288, in moveTo
+    _mouseMoveDrag("move", x, y, 0, 0, duration, tween)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\pyautogui\__init__.py", line 1504, in _mouseMoveDrag
+    failSafeCheck()
+    ~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\pyautogui\__init__.py", line 1734, in failSafeCheck
+    raise FailSafeException(
+        "PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED."
+    )
+pyautogui.FailSafeException: PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED.
+2025-10-09 07:26:14,127 - INFO - Start time : 2025-10-09 07:25:31
+2025-10-09 07:26:14,127 - INFO - End time   : 2025-10-09 07:26:14
+2025-10-09 07:26:14,127 - INFO - Elapsed    : 0m 42s
+2025-10-09 07:26:14,128 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 277, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 212, in run_sales_automation
+    _open_sales_analysis()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 100, in _open_sales_analysis
+    pyautogui.moveTo(*get_tuple("COORDS", key), duration=0.2)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\pyautogui\__init__.py", line 594, in wrapper
+    returnVal = wrappedFunction(*args, **kwargs)
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\pyautogui\__init__.py", line 1288, in moveTo
+    _mouseMoveDrag("move", x, y, 0, 0, duration, tween)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\pyautogui\__init__.py", line 1504, in _mouseMoveDrag
+    failSafeCheck()
+    ~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\pyautogui\__init__.py", line 1734, in failSafeCheck
+    raise FailSafeException(
+        "PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED."
+    )
+pyautogui.FailSafeException: PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED.
+2025-10-09 07:27:07,146 - INFO - === Sales automation started ===
+2025-10-09 07:28:17,797 - INFO - === input_sales started for day 8 ===
+2025-10-09 07:28:19,524 - INFO - Workbook already open.
+2025-10-09 07:28:30,499 - INFO - Daily report saved and closed
+2025-10-09 07:28:31,024 - INFO - === input_sales finished in 0m 13s ===
+2025-10-09 07:28:34,456 - INFO - === Sales automation finished successfully ===
+2025-10-09 07:28:34,457 - INFO - Start time : 2025-10-09 07:27:07
+2025-10-09 07:28:34,457 - INFO - End time   : 2025-10-09 07:28:34
+2025-10-09 07:28:34,457 - INFO - Elapsed    : 1m 27s
+2025-10-09 08:21:37,206 - INFO - Script started
+2025-10-09 08:21:38,091 - INFO - Opening new workbook.
+2025-10-09 08:21:39,123 - INFO - Workbook already open.
+2025-10-09 08:21:40,062 - INFO - Script running succesfully, finished in 2.86 seconds
+2025-10-10 08:21:39,473 - INFO - === Sales automation started ===
+2025-10-10 08:22:48,990 - INFO - === input_sales started for day 9 ===
+2025-10-10 08:22:50,696 - INFO - Workbook already open.
+2025-10-10 08:23:00,917 - INFO - Daily report saved and closed
+2025-10-10 08:23:01,444 - INFO - === input_sales finished in 0m 12s ===
+2025-10-10 08:23:03,243 - INFO - === Sales automation finished successfully ===
+2025-10-10 08:23:03,243 - INFO - Start time : 2025-10-10 08:21:39
+2025-10-10 08:23:03,243 - INFO - End time   : 2025-10-10 08:23:03
+2025-10-10 08:23:03,243 - INFO - Elapsed    : 1m 23s
+2025-10-10 08:28:55,043 - INFO - Script started
+2025-10-10 08:28:55,872 - INFO - Opening new workbook.
+2025-10-10 08:28:56,900 - INFO - Workbook already open.
+2025-10-10 08:28:57,730 - INFO - Script running succesfully, finished in 2.69 seconds
+2025-10-12 20:18:41,345 - INFO - === Sales automation started ===
+2025-10-12 20:20:00,036 - INFO - === input_sales started for day 10 ===
+2025-10-12 20:20:02,263 - INFO - Workbook already open.
+2025-10-12 20:20:15,518 - INFO - Daily report saved and closed
+2025-10-12 20:20:16,413 - INFO - === input_sales finished in 0m 16s ===
+2025-10-12 20:20:21,785 - INFO - === Sales automation finished successfully ===
+2025-10-12 20:20:21,785 - INFO - Start time : 2025-10-12 20:18:41
+2025-10-12 20:20:21,785 - INFO - End time   : 2025-10-12 20:20:21
+2025-10-12 20:20:21,786 - INFO - Elapsed    : 1m 40s
+2025-10-12 20:20:38,524 - INFO - === Sales automation started ===
+2025-10-12 20:21:49,602 - INFO - === input_sales started for day 11 ===
+2025-10-12 20:22:08,610 - INFO - Daily report saved and closed
+2025-10-12 20:22:09,285 - INFO - === input_sales finished in 0m 19s ===
+2025-10-12 23:02:02,235 - INFO - === Sales automation finished successfully ===
+2025-10-12 23:02:02,242 - INFO - Start time : 2025-10-12 20:20:38
+2025-10-12 23:02:02,243 - INFO - End time   : 2025-10-12 23:02:02
+2025-10-12 23:02:02,243 - INFO - Elapsed    : 161m 23s
+2025-10-12 23:02:21,057 - INFO - === Sales automation started ===
+2025-10-12 23:03:37,280 - INFO - === input_sales started for day 12 ===
+2025-10-12 23:03:56,084 - INFO - Daily report saved and closed
+2025-10-12 23:03:56,750 - INFO - === input_sales finished in 0m 19s ===
+2025-10-12 23:04:28,483 - INFO - === Sales automation finished successfully ===
+2025-10-12 23:04:28,483 - INFO - Start time : 2025-10-12 23:02:21
+2025-10-12 23:04:28,484 - INFO - End time   : 2025-10-12 23:04:28
+2025-10-12 23:04:28,484 - INFO - Elapsed    : 2m 7s
+2025-10-14 08:36:19,178 - INFO - === Sales automation started ===
+2025-10-14 08:37:21,040 - INFO - === input_sales started for day 13 ===
+2025-10-14 08:37:35,740 - INFO - Daily report saved and closed
+2025-10-14 08:37:36,119 - INFO - === input_sales finished in 0m 15s ===
+2025-10-14 08:37:37,392 - INFO - === Sales automation finished successfully ===
+2025-10-14 08:37:37,392 - INFO - Start time : 2025-10-14 08:36:19
+2025-10-14 08:37:37,392 - INFO - End time   : 2025-10-14 08:37:37
+2025-10-14 08:37:37,393 - INFO - Elapsed    : 1m 18s
+2025-10-14 08:42:04,524 - INFO - Script started
+2025-10-14 08:42:05,493 - INFO - Opening new workbook.
+2025-10-14 08:42:06,767 - INFO - Workbook already open.
+2025-10-14 08:42:07,474 - INFO - Script running succesfully, finished in 2.95 seconds
+2025-10-15 08:21:21,795 - INFO - === Sales automation started ===
+2025-10-15 08:22:21,408 - INFO - === input_sales started for day 14 ===
+2025-10-15 08:22:36,573 - INFO - Daily report saved and closed
+2025-10-15 08:22:37,007 - INFO - === input_sales finished in 0m 15s ===
+2025-10-15 08:22:38,418 - INFO - === Sales automation finished successfully ===
+2025-10-15 08:22:38,418 - INFO - Start time : 2025-10-15 08:21:21
+2025-10-15 08:22:38,418 - INFO - End time   : 2025-10-15 08:22:38
+2025-10-15 08:22:38,418 - INFO - Elapsed    : 1m 16s
+2025-10-15 08:28:35,232 - INFO - Script started
+2025-10-15 08:28:35,719 - INFO - Opening new workbook.
+2025-10-15 08:28:36,598 - INFO - Workbook already open.
+2025-10-15 08:28:37,214 - INFO - Script running succesfully, finished in 1.98 seconds
+2025-10-16 08:32:19,444 - INFO - === Sales automation started ===
+2025-10-16 08:32:45,068 - INFO - Start time : 2025-10-16 08:32:19
+2025-10-16 08:32:45,068 - INFO - End time   : 2025-10-16 08:32:45
+2025-10-16 08:32:45,068 - INFO - Elapsed    : 0m 25s
+2025-10-16 08:32:55,935 - INFO - === Sales automation started ===
+2025-10-16 08:33:57,852 - INFO - === input_sales started for day 15 ===
+2025-10-16 08:34:00,145 - INFO - Workbook already open.
+2025-10-16 08:34:11,297 - INFO - Daily report saved and closed
+2025-10-16 08:34:11,684 - INFO - === input_sales finished in 0m 13s ===
+2025-10-16 08:34:12,941 - INFO - === Sales automation finished successfully ===
+2025-10-16 08:34:12,942 - INFO - Start time : 2025-10-16 08:32:55
+2025-10-16 08:34:12,942 - INFO - End time   : 2025-10-16 08:34:12
+2025-10-16 08:34:12,942 - INFO - Elapsed    : 1m 17s
+2025-10-16 08:46:25,195 - INFO - Script started
+2025-10-16 08:46:26,074 - INFO - Opening new workbook.
+2025-10-16 08:46:27,087 - INFO - Workbook already open.
+2025-10-16 08:46:28,045 - INFO - Script running succesfully, finished in 2.85 seconds
+2025-10-17 08:36:08,379 - INFO - === Sales automation started ===
+2025-10-17 08:37:11,360 - INFO - === input_sales started for day 16 ===
+2025-10-17 08:37:25,852 - INFO - Daily report saved and closed
+2025-10-17 08:37:26,240 - INFO - === input_sales finished in 0m 14s ===
+2025-10-17 08:37:27,732 - INFO - === Sales automation finished successfully ===
+2025-10-17 08:37:27,733 - INFO - Start time : 2025-10-17 08:36:08
+2025-10-17 08:37:27,733 - INFO - End time   : 2025-10-17 08:37:27
+2025-10-17 08:37:27,733 - INFO - Elapsed    : 1m 19s
+2025-10-17 08:44:23,767 - INFO - Script started
+2025-10-17 08:44:24,359 - INFO - Opening new workbook.
+2025-10-17 08:44:25,325 - INFO - Workbook already open.
+2025-10-17 08:44:25,991 - INFO - Script running succesfully, finished in 2.22 seconds
+2025-10-19 22:26:55,905 - INFO - === Sales automation started ===
+2025-10-19 22:27:21,337 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 209, in run_sales_automation
+    run_app_and_login(app_path, app_name)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 92, in run_app_and_login
+    pyautogui.typewrite(password, interval=0.05)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\pyautogui\__init__.py", line 593, in wrapper
+    failSafeCheck()
+    ~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\pyautogui\__init__.py", line 1734, in failSafeCheck
+    raise FailSafeException(
+        "PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED."
+    )
+pyautogui.FailSafeException: PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED.
+2025-10-19 22:27:21,343 - INFO - Start time : 2025-10-19 22:26:55
+2025-10-19 22:27:21,343 - INFO - End time   : 2025-10-19 22:27:21
+2025-10-19 22:27:21,343 - INFO - Elapsed    : 0m 25s
+2025-10-19 22:27:21,343 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 277, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 209, in run_sales_automation
+    run_app_and_login(app_path, app_name)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 92, in run_app_and_login
+    pyautogui.typewrite(password, interval=0.05)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\pyautogui\__init__.py", line 593, in wrapper
+    failSafeCheck()
+    ~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\pyautogui\__init__.py", line 1734, in failSafeCheck
+    raise FailSafeException(
+        "PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED."
+    )
+pyautogui.FailSafeException: PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED.
+2025-10-19 22:27:51,527 - INFO - === Sales automation started ===
+2025-10-19 22:29:05,868 - INFO - === input_sales started for day 17 ===
+2025-10-19 22:29:22,324 - INFO - Daily report saved and closed
+2025-10-19 22:29:22,912 - INFO - === input_sales finished in 0m 17s ===
+2025-10-19 22:29:26,432 - INFO - === Sales automation finished successfully ===
+2025-10-19 22:29:26,432 - INFO - Start time : 2025-10-19 22:27:51
+2025-10-19 22:29:26,433 - INFO - End time   : 2025-10-19 22:29:26
+2025-10-19 22:29:26,433 - INFO - Elapsed    : 1m 34s
+2025-10-19 22:29:50,547 - INFO - === Sales automation started ===
+2025-10-19 22:31:00,159 - INFO - === input_sales started for day 18 ===
+2025-10-19 22:31:14,797 - INFO - Daily report saved and closed
+2025-10-19 22:31:15,200 - INFO - === input_sales finished in 0m 15s ===
+2025-10-19 22:31:33,970 - INFO - === Sales automation finished successfully ===
+2025-10-19 22:31:33,970 - INFO - Start time : 2025-10-19 22:29:50
+2025-10-19 22:31:33,970 - INFO - End time   : 2025-10-19 22:31:33
+2025-10-19 22:31:33,970 - INFO - Elapsed    : 1m 43s
+2025-10-19 22:31:56,700 - INFO - === Sales automation started ===
+2025-10-19 22:33:14,648 - INFO - === input_sales started for day 19 ===
+2025-10-19 22:33:29,257 - INFO - Daily report saved and closed
+2025-10-19 22:33:29,702 - INFO - === input_sales finished in 0m 15s ===
+2025-10-19 22:34:05,563 - INFO - === Sales automation finished successfully ===
+2025-10-19 22:34:05,563 - INFO - Start time : 2025-10-19 22:31:56
+2025-10-19 22:34:05,564 - INFO - End time   : 2025-10-19 22:34:05
+2025-10-19 22:34:05,564 - INFO - Elapsed    : 2m 8s
+2025-10-21 08:30:57,156 - INFO - === Sales automation started ===
+2025-10-21 08:32:04,759 - INFO - === input_sales started for day 20 ===
+2025-10-21 08:32:06,206 - INFO - Workbook already open.
+2025-10-21 08:32:15,959 - INFO - Daily report saved and closed
+2025-10-21 08:32:16,382 - INFO - === input_sales finished in 0m 11s ===
+2025-10-21 08:32:53,102 - INFO - === Sales automation finished successfully ===
+2025-10-21 08:32:53,103 - INFO - Start time : 2025-10-21 08:30:57
+2025-10-21 08:32:53,103 - INFO - End time   : 2025-10-21 08:32:53
+2025-10-21 08:32:53,103 - INFO - Elapsed    : 1m 55s
+2025-10-21 08:39:13,132 - INFO - Script started
+2025-10-21 08:39:13,889 - INFO - Opening new workbook.
+2025-10-21 08:39:14,869 - INFO - Workbook already open.
+2025-10-21 08:39:15,603 - INFO - Script running succesfully, finished in 2.47 seconds
+2025-10-22 08:28:28,895 - INFO - === Sales automation started ===
+2025-10-22 08:29:30,708 - INFO - === input_sales started for day 21 ===
+2025-10-22 08:29:31,902 - INFO - Workbook already open.
+2025-10-22 08:29:40,929 - INFO - Daily report saved and closed
+2025-10-22 08:29:41,308 - INFO - === input_sales finished in 0m 10s ===
+2025-10-22 08:29:46,644 - INFO - === Sales automation finished successfully ===
+2025-10-22 08:29:46,645 - INFO - Start time : 2025-10-22 08:28:28
+2025-10-22 08:29:46,645 - INFO - End time   : 2025-10-22 08:29:46
+2025-10-22 08:29:46,645 - INFO - Elapsed    : 1m 17s
+2025-10-22 08:33:05,975 - INFO - Script started
+2025-10-22 08:33:06,502 - INFO - Opening new workbook.
+2025-10-22 08:33:07,297 - INFO - Workbook already open.
+2025-10-22 08:33:07,902 - INFO - Script running succesfully, finished in 1.93 seconds
+2025-10-23 08:33:55,114 - INFO - === Sales automation started ===
+2025-10-23 08:35:00,083 - INFO - === input_sales started for day 22 ===
+2025-10-23 08:35:15,067 - INFO - Daily report saved and closed
+2025-10-23 08:35:15,583 - INFO - === input_sales finished in 0m 15s ===
+2025-10-23 08:36:36,633 - INFO - === Sales automation started ===
+2025-10-23 08:37:36,645 - INFO - === input_sales started for day 22 ===
+2025-10-23 08:37:49,999 - INFO - Daily report saved and closed
+2025-10-23 08:37:50,340 - INFO - === input_sales finished in 0m 13s ===
+2025-10-23 08:38:10,992 - INFO - === Sales automation finished successfully ===
+2025-10-23 08:38:10,993 - INFO - Start time : 2025-10-23 08:36:36
+2025-10-23 08:38:10,993 - INFO - End time   : 2025-10-23 08:38:10
+2025-10-23 08:38:10,993 - INFO - Elapsed    : 1m 34s
+2025-10-23 08:42:12,267 - INFO - Script started
+2025-10-23 08:42:12,876 - INFO - Opening new workbook.
+2025-10-23 08:42:12,882 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 99, in <module>
+    main()
+    ~~~~^^
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 92, in main
+    daily_2(daily_sales_report, input_sheet, revenue_sheet)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 45, in daily_2
+    wb = get_or_open_wb(final_filename)
+  File "E:\Satrio\Projects\MouseApp\daily_report.py", line 22, in get_or_open_wb
+    return xw.books.open(filepath)
+           ~~~~~~~~~~~~~^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\xlwings\main.py", line 5174, in open
+    raise FileNotFoundError("No such file: '%s'" % fullname)
+FileNotFoundError: No such file: 'E:\1. Sales Strategy\2025\1. DAILY REPORT\251022★ 25년 10월 해외점포 실적동향 (자카르탇점).xlsx'
+2025-10-23 08:42:25,308 - INFO - Script started
+2025-10-23 08:42:25,795 - INFO - Opening new workbook.
+2025-10-23 08:42:26,602 - INFO - Workbook already open.
+2025-10-23 08:42:27,210 - INFO - Script running succesfully, finished in 1.90 seconds
+2025-10-24 08:17:48,383 - INFO - === Sales automation started ===
+2025-10-24 08:18:55,532 - INFO - === input_sales started for day 23 ===
+2025-10-24 08:19:09,738 - INFO - Daily report saved and closed
+2025-10-24 08:19:10,100 - INFO - === input_sales finished in 0m 14s ===
+2025-10-24 08:19:11,913 - INFO - === Sales automation finished successfully ===
+2025-10-24 08:19:11,913 - INFO - Start time : 2025-10-24 08:17:48
+2025-10-24 08:19:11,913 - INFO - End time   : 2025-10-24 08:19:11
+2025-10-24 08:19:11,913 - INFO - Elapsed    : 1m 23s
+2025-10-24 08:23:50,763 - INFO - Script started
+2025-10-24 08:23:51,391 - INFO - Opening new workbook.
+2025-10-24 08:23:52,288 - INFO - Workbook already open.
+2025-10-24 08:23:52,990 - INFO - Script running succesfully, finished in 2.23 seconds
+2025-10-26 22:10:23,927 - INFO - === Sales automation started ===
+2025-10-26 22:11:28,777 - INFO - === input_sales started for day 24 ===
+2025-10-26 22:11:44,248 - INFO - Daily report saved and closed
+2025-10-26 22:11:44,909 - INFO - === input_sales finished in 0m 16s ===
+2025-10-26 22:11:53,027 - INFO - === Sales automation finished successfully ===
+2025-10-26 22:11:53,027 - INFO - Start time : 2025-10-26 22:10:23
+2025-10-26 22:11:53,028 - INFO - End time   : 2025-10-26 22:11:53
+2025-10-26 22:11:53,028 - INFO - Elapsed    : 1m 29s
+2025-10-26 22:11:58,027 - INFO - === Sales automation started ===
+2025-10-26 22:13:08,016 - INFO - === input_sales started for day 25 ===
+2025-10-26 22:13:22,215 - INFO - Daily report saved and closed
+2025-10-26 22:13:22,718 - INFO - === input_sales finished in 0m 14s ===
+2025-10-26 22:13:47,013 - INFO - === Sales automation finished successfully ===
+2025-10-26 22:13:47,014 - INFO - Start time : 2025-10-26 22:11:58
+2025-10-26 22:13:47,014 - INFO - End time   : 2025-10-26 22:13:47
+2025-10-26 22:13:47,014 - INFO - Elapsed    : 1m 48s
+2025-10-26 22:13:57,894 - INFO - === Sales automation started ===
+2025-10-26 22:16:04,373 - INFO - === input_sales started for day 26 ===
+2025-10-26 22:16:18,298 - INFO - Daily report saved and closed
+2025-10-26 22:16:18,768 - INFO - === input_sales finished in 0m 14s ===
+2025-10-26 22:16:32,937 - INFO - === Sales automation finished successfully ===
+2025-10-26 22:16:32,937 - INFO - Start time : 2025-10-26 22:13:57
+2025-10-26 22:16:32,938 - INFO - End time   : 2025-10-26 22:16:32
+2025-10-26 22:16:32,938 - INFO - Elapsed    : 2m 35s
+2025-10-27 08:24:29,914 - INFO - Script started
+2025-10-27 08:24:30,548 - INFO - Opening new workbook.
+2025-10-27 08:24:31,543 - INFO - Workbook already open.
+2025-10-27 08:24:32,335 - INFO - Script running succesfully, finished in 2.42 seconds
+2025-10-27 14:27:56,342 - INFO - === Sales automation started ===
+2025-10-27 14:28:15,686 - INFO - Start time : 2025-10-27 14:27:56
+2025-10-27 14:28:15,686 - INFO - End time   : 2025-10-27 14:28:15
+2025-10-27 14:28:15,687 - INFO - Elapsed    : 0m 19s
+2025-10-27 14:28:20,688 - INFO - === Sales automation started ===
+2025-10-27 14:29:28,162 - INFO - === input_sales started for day 25 ===
+2025-10-27 14:29:29,656 - INFO - Workbook already open.
+2025-10-27 14:29:39,681 - INFO - Daily report saved and closed
+2025-10-27 14:29:40,136 - INFO - === input_sales finished in 0m 11s ===
+2025-10-27 14:29:41,230 - INFO - === Sales automation finished successfully ===
+2025-10-27 14:29:41,231 - INFO - Start time : 2025-10-27 14:28:20
+2025-10-27 14:29:41,231 - INFO - End time   : 2025-10-27 14:29:41
+2025-10-27 14:29:41,231 - INFO - Elapsed    : 1m 20s
+2025-10-28 08:41:13,698 - INFO - === Sales automation started ===
+2025-10-28 08:42:13,539 - INFO - === input_sales started for day 27 ===
+2025-10-28 08:42:15,414 - INFO - Workbook already open.
+2025-10-28 08:42:27,095 - INFO - Daily report saved and closed
+2025-10-28 08:42:27,581 - INFO - === input_sales finished in 0m 14s ===
+2025-10-28 08:42:29,820 - INFO - === Sales automation finished successfully ===
+2025-10-28 08:42:29,820 - INFO - Start time : 2025-10-28 08:41:13
+2025-10-28 08:42:29,820 - INFO - End time   : 2025-10-28 08:42:29
+2025-10-28 08:42:29,820 - INFO - Elapsed    : 1m 16s
+2025-10-28 08:49:52,701 - INFO - Script started
+2025-10-28 08:49:53,693 - INFO - Opening new workbook.
+2025-10-28 08:49:54,775 - INFO - Workbook already open.
+2025-10-28 08:49:55,615 - INFO - Script running succesfully, finished in 2.91 seconds
+2025-10-29 08:23:20,068 - INFO - === Sales automation started ===
+2025-10-29 08:25:09,420 - INFO - === input_sales started for day 28 ===
+2025-10-29 08:25:24,128 - INFO - Daily report saved and closed
+2025-10-29 08:25:24,661 - INFO - === input_sales finished in 0m 15s ===
+2025-10-29 08:25:26,198 - INFO - === Sales automation finished successfully ===
+2025-10-29 08:25:26,198 - INFO - Start time : 2025-10-29 08:23:20
+2025-10-29 08:25:26,199 - INFO - End time   : 2025-10-29 08:25:26
+2025-10-29 08:25:26,199 - INFO - Elapsed    : 2m 6s
+2025-10-29 08:32:10,621 - INFO - Script started
+2025-10-29 08:32:11,477 - INFO - Opening new workbook.
+2025-10-29 08:32:12,510 - INFO - Workbook already open.
+2025-10-29 08:32:13,271 - INFO - Script running succesfully, finished in 2.65 seconds
+2025-10-30 08:24:09,196 - INFO - === Sales automation started ===
+2025-10-30 08:25:12,176 - INFO - === input_sales started for day 29 ===
+2025-10-30 08:25:28,321 - INFO - Daily report saved and closed
+2025-10-30 08:25:28,730 - INFO - === input_sales finished in 0m 16s ===
+2025-10-30 08:25:36,687 - INFO - === Sales automation finished successfully ===
+2025-10-30 08:25:36,687 - INFO - Start time : 2025-10-30 08:24:09
+2025-10-30 08:25:36,688 - INFO - End time   : 2025-10-30 08:25:36
+2025-10-30 08:25:36,688 - INFO - Elapsed    : 1m 27s
+2025-10-30 08:30:41,403 - INFO - Script started
+2025-10-30 08:30:42,122 - INFO - Opening new workbook.
+2025-10-30 08:30:42,921 - INFO - Workbook already open.
+2025-10-30 08:30:43,589 - INFO - Script running succesfully, finished in 2.19 seconds
+2025-10-31 08:38:22,241 - INFO - === Sales automation started ===
+2025-10-31 08:39:30,017 - INFO - === input_sales started for day 30 ===
+2025-10-31 08:39:31,982 - INFO - Workbook already open.
+2025-10-31 08:39:43,270 - INFO - Daily report saved and closed
+2025-10-31 08:39:43,643 - INFO - === input_sales finished in 0m 13s ===
+2025-10-31 08:40:13,143 - INFO - === Sales automation finished successfully ===
+2025-10-31 08:40:13,143 - INFO - Start time : 2025-10-31 08:38:22
+2025-10-31 08:40:13,144 - INFO - End time   : 2025-10-31 08:40:13
+2025-10-31 08:40:13,144 - INFO - Elapsed    : 1m 50s
+2025-10-31 08:47:03,508 - INFO - Script started
+2025-10-31 08:47:04,250 - INFO - Opening new workbook.
+2025-10-31 08:47:05,276 - INFO - Workbook already open.
+2025-10-31 08:47:06,173 - INFO - Script running succesfully, finished in 2.66 seconds
+2025-11-02 22:54:32,478 - INFO - === Sales automation started ===
+2025-11-02 22:55:03,327 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 205, in run_sales_automation
+    input_date = ask_for_date()
+  File "E:\Satrio\Projects\MouseApp\main.py", line 38, in ask_for_date
+    return datetime(today.year, today.month, int(day_str))
+ValueError: day is out of range for month
+2025-11-02 22:55:03,335 - INFO - Start time : 2025-11-02 22:54:32
+2025-11-02 22:55:03,335 - INFO - End time   : 2025-11-02 22:55:03
+2025-11-02 22:55:03,336 - INFO - Elapsed    : 0m 30s
+2025-11-02 22:55:03,336 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 277, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 205, in run_sales_automation
+    input_date = ask_for_date()
+  File "E:\Satrio\Projects\MouseApp\main.py", line 38, in ask_for_date
+    return datetime(today.year, today.month, int(day_str))
+ValueError: day is out of range for month
+2025-11-02 22:57:44,564 - INFO - === Sales automation started ===
+2025-11-02 22:59:16,798 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 249, in run_sales_automation
+    _daily_sales_analysis(input_day_str)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 130, in _daily_sales_analysis
+    wait_for_pixel(x, y, rgb)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 63, in wait_for_pixel
+    raise TimeoutError(f"UI not ready after {timeout}s at pixel {x},{y}")
+TimeoutError: UI not ready after 30s at pixel 1039,529
+2025-11-02 22:59:16,803 - INFO - Start time : 2025-11-02 22:57:44
+2025-11-02 22:59:16,803 - INFO - End time   : 2025-11-02 22:59:16
+2025-11-02 22:59:16,804 - INFO - Elapsed    : 1m 32s
+2025-11-02 22:59:16,804 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 277, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 249, in run_sales_automation
+    _daily_sales_analysis(input_day_str)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 130, in _daily_sales_analysis
+    wait_for_pixel(x, y, rgb)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 63, in wait_for_pixel
+    raise TimeoutError(f"UI not ready after {timeout}s at pixel {x},{y}")
+TimeoutError: UI not ready after 30s at pixel 1039,529
+2025-11-02 22:59:30,453 - INFO - === Sales automation started ===
+2025-11-02 23:00:39,078 - INFO - === input_sales started for day 1 ===
+2025-11-02 23:00:59,346 - INFO - Daily report saved and closed
+2025-11-02 23:00:59,878 - INFO - === input_sales finished in 0m 20s ===
+2025-11-02 23:01:04,383 - INFO - === Sales automation finished successfully ===
+2025-11-02 23:01:04,383 - INFO - Start time : 2025-11-02 22:59:30
+2025-11-02 23:01:04,383 - INFO - End time   : 2025-11-02 23:01:04
+2025-11-02 23:01:04,383 - INFO - Elapsed    : 1m 33s
+2025-11-02 23:01:20,294 - INFO - === Sales automation started ===
+2025-11-02 23:02:44,649 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 249, in run_sales_automation
+    _daily_sales_analysis(input_day_str)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 130, in _daily_sales_analysis
+    wait_for_pixel(x, y, rgb)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 63, in wait_for_pixel
+    raise TimeoutError(f"UI not ready after {timeout}s at pixel {x},{y}")
+TimeoutError: UI not ready after 30s at pixel 1039,529
+2025-11-02 23:02:44,653 - INFO - Start time : 2025-11-02 23:01:20
+2025-11-02 23:02:44,654 - INFO - End time   : 2025-11-02 23:02:44
+2025-11-02 23:02:44,654 - INFO - Elapsed    : 1m 24s
+2025-11-02 23:02:44,654 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 277, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 249, in run_sales_automation
+    _daily_sales_analysis(input_day_str)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 130, in _daily_sales_analysis
+    wait_for_pixel(x, y, rgb)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 63, in wait_for_pixel
+    raise TimeoutError(f"UI not ready after {timeout}s at pixel {x},{y}")
+TimeoutError: UI not ready after 30s at pixel 1039,529
+2025-11-02 23:03:08,015 - INFO - === Sales automation started ===
+2025-11-02 23:04:36,251 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 249, in run_sales_automation
+    _daily_sales_analysis(input_day_str)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 130, in _daily_sales_analysis
+    wait_for_pixel(x, y, rgb)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 63, in wait_for_pixel
+    raise TimeoutError(f"UI not ready after {timeout}s at pixel {x},{y}")
+TimeoutError: UI not ready after 30s at pixel 1039,529
+2025-11-02 23:04:36,255 - INFO - Start time : 2025-11-02 23:03:08
+2025-11-02 23:04:36,255 - INFO - End time   : 2025-11-02 23:04:36
+2025-11-02 23:04:36,255 - INFO - Elapsed    : 1m 28s
+2025-11-02 23:04:36,256 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 277, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 249, in run_sales_automation
+    _daily_sales_analysis(input_day_str)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 130, in _daily_sales_analysis
+    wait_for_pixel(x, y, rgb)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 63, in wait_for_pixel
+    raise TimeoutError(f"UI not ready after {timeout}s at pixel {x},{y}")
+TimeoutError: UI not ready after 30s at pixel 1039,529
+2025-11-02 23:04:57,468 - INFO - === Sales automation started ===
+2025-11-02 23:06:04,735 - INFO - === input_sales started for day 2 ===
+2025-11-02 23:06:19,806 - INFO - Daily report saved and closed
+2025-11-02 23:06:20,275 - INFO - === input_sales finished in 0m 15s ===
+2025-11-02 23:06:30,840 - INFO - === Sales automation finished successfully ===
+2025-11-02 23:06:30,840 - INFO - Start time : 2025-11-02 23:04:57
+2025-11-02 23:06:30,840 - INFO - End time   : 2025-11-02 23:06:30
+2025-11-02 23:06:30,841 - INFO - Elapsed    : 1m 33s
+2025-11-02 23:07:10,814 - INFO - === Sales automation started ===
+2025-11-02 23:08:40,030 - INFO - Start time : 2025-11-02 23:07:10
+2025-11-02 23:08:40,030 - INFO - End time   : 2025-11-02 23:08:40
+2025-11-02 23:08:40,030 - INFO - Elapsed    : 1m 29s
+2025-11-02 23:09:30,507 - INFO - === Sales automation started ===
+2025-11-02 23:10:34,268 - INFO - === input_sales started for day 2 ===
+2025-11-02 23:10:35,341 - INFO - Workbook already open.
+2025-11-02 23:10:44,798 - INFO - Daily report saved and closed
+2025-11-02 23:10:45,270 - INFO - === input_sales finished in 0m 11s ===
+2025-11-02 23:11:01,472 - INFO - === Sales automation finished successfully ===
+2025-11-02 23:11:01,473 - INFO - Start time : 2025-11-02 23:09:30
+2025-11-02 23:11:01,473 - INFO - End time   : 2025-11-02 23:11:01
+2025-11-02 23:11:01,473 - INFO - Elapsed    : 1m 30s
+2025-11-02 23:12:59,948 - INFO - === Sales automation started ===
+2025-11-02 23:14:12,070 - INFO - === input_sales started for day 2 ===
+2025-11-02 23:14:13,115 - INFO - Workbook already open.
+2025-11-02 23:14:22,939 - INFO - Daily report saved and closed
+2025-11-02 23:14:23,430 - INFO - === input_sales finished in 0m 11s ===
+2025-11-02 23:14:30,140 - INFO - === Sales automation finished successfully ===
+2025-11-02 23:14:30,140 - INFO - Start time : 2025-11-02 23:12:59
+2025-11-02 23:14:30,140 - INFO - End time   : 2025-11-02 23:14:30
+2025-11-02 23:14:30,141 - INFO - Elapsed    : 1m 30s
+2025-11-02 23:14:59,826 - INFO - === Sales automation started ===
+2025-11-02 23:16:11,187 - INFO - === input_sales started for day 2 ===
+2025-11-02 23:16:12,187 - INFO - Workbook already open.
+2025-11-02 23:16:20,932 - INFO - Daily report saved and closed
+2025-11-02 23:16:21,301 - INFO - === input_sales finished in 0m 10s ===
+2025-11-02 23:16:50,027 - INFO - === Sales automation finished successfully ===
+2025-11-02 23:16:50,027 - INFO - Start time : 2025-11-02 23:14:59
+2025-11-02 23:16:50,028 - INFO - End time   : 2025-11-02 23:16:50
+2025-11-02 23:16:50,028 - INFO - Elapsed    : 1m 50s
+2025-11-04 08:26:41,845 - INFO - === Sales automation started ===
+2025-11-04 08:27:52,927 - INFO - === input_sales started for day 3 ===
+2025-11-04 08:28:11,884 - INFO - Daily report saved and closed
+2025-11-04 08:28:12,534 - INFO - === input_sales finished in 0m 19s ===
+2025-11-04 08:28:17,447 - INFO - === Sales automation finished successfully ===
+2025-11-04 08:28:17,448 - INFO - Start time : 2025-11-04 08:26:41
+2025-11-04 08:28:17,448 - INFO - End time   : 2025-11-04 08:28:17
+2025-11-04 08:28:17,448 - INFO - Elapsed    : 1m 35s
+2025-11-04 08:33:41,732 - INFO - Script started
+2025-11-04 08:33:42,963 - INFO - Opening new workbook.
+2025-11-04 08:33:44,280 - INFO - Workbook already open.
+2025-11-04 08:33:45,377 - INFO - Script running succesfully, finished in 3.64 seconds
+2025-11-05 08:06:52,662 - INFO - === Sales automation started ===
+2025-11-05 08:07:06,728 - INFO - Start time : 2025-11-05 08:06:52
+2025-11-05 08:07:06,729 - INFO - End time   : 2025-11-05 08:07:06
+2025-11-05 08:07:06,729 - INFO - Elapsed    : 0m 14s
+2025-11-05 08:07:16,589 - INFO - === Sales automation started ===
+2025-11-05 08:08:14,701 - INFO - === input_sales started for day 4 ===
+2025-11-05 08:08:30,671 - INFO - Daily report saved and closed
+2025-11-05 08:08:31,103 - INFO - === input_sales finished in 0m 16s ===
+2025-11-05 08:09:36,707 - INFO - === Sales automation finished successfully ===
+2025-11-05 08:09:36,707 - INFO - Start time : 2025-11-05 08:07:16
+2025-11-05 08:09:36,707 - INFO - End time   : 2025-11-05 08:09:36
+2025-11-05 08:09:36,708 - INFO - Elapsed    : 2m 20s
+2025-11-05 08:11:34,563 - INFO - Script started
+2025-11-05 08:11:35,157 - INFO - Opening new workbook.
+2025-11-05 08:11:36,149 - INFO - Workbook already open.
+2025-11-05 08:11:36,772 - INFO - Script running succesfully, finished in 2.21 seconds
+2025-11-06 08:16:28,293 - INFO - === Sales automation started ===
+2025-11-06 08:16:50,686 - INFO - Start time : 2025-11-06 08:16:28
+2025-11-06 08:16:50,687 - INFO - End time   : 2025-11-06 08:16:50
+2025-11-06 08:16:50,687 - INFO - Elapsed    : 0m 22s
+2025-11-06 08:16:53,882 - INFO - === Sales automation started ===
+2025-11-06 08:17:57,526 - INFO - === input_sales started for day 5 ===
+2025-11-06 08:17:59,377 - INFO - Workbook already open.
+2025-11-06 08:18:10,247 - INFO - Daily report saved and closed
+2025-11-06 08:18:10,705 - INFO - === input_sales finished in 0m 13s ===
+2025-11-06 08:18:11,829 - INFO - === Sales automation finished successfully ===
+2025-11-06 08:18:11,829 - INFO - Start time : 2025-11-06 08:16:53
+2025-11-06 08:18:11,829 - INFO - End time   : 2025-11-06 08:18:11
+2025-11-06 08:18:11,830 - INFO - Elapsed    : 1m 17s
+2025-11-06 08:23:57,582 - INFO - Script started
+2025-11-06 08:23:58,824 - INFO - Opening new workbook.
+2025-11-06 08:24:00,051 - INFO - Workbook already open.
+2025-11-06 08:24:00,782 - INFO - Script running succesfully, finished in 3.20 seconds
+2025-11-07 08:19:21,396 - INFO - === Sales automation started ===
+2025-11-07 08:20:28,722 - INFO - === input_sales started for day 6 ===
+2025-11-07 08:20:44,368 - INFO - Daily report saved and closed
+2025-11-07 08:20:44,842 - INFO - === input_sales finished in 0m 16s ===
+2025-11-07 08:20:48,976 - INFO - === Sales automation finished successfully ===
+2025-11-07 08:20:48,976 - INFO - Start time : 2025-11-07 08:19:21
+2025-11-07 08:20:48,977 - INFO - End time   : 2025-11-07 08:20:48
+2025-11-07 08:20:48,977 - INFO - Elapsed    : 1m 27s
+2025-11-09 22:43:42,309 - INFO - === Sales automation started ===
+2025-11-09 22:45:02,483 - INFO - === input_sales started for day 7 ===
+2025-11-09 22:45:18,614 - INFO - Daily report saved and closed
+2025-11-09 22:45:19,137 - INFO - === input_sales finished in 0m 16s ===
+2025-11-09 22:45:33,521 - INFO - === Sales automation finished successfully ===
+2025-11-09 22:45:33,522 - INFO - Start time : 2025-11-09 22:43:42
+2025-11-09 22:45:33,522 - INFO - End time   : 2025-11-09 22:45:33
+2025-11-09 22:45:33,522 - INFO - Elapsed    : 1m 51s
+2025-11-09 22:46:27,499 - INFO - === Sales automation started ===
+2025-11-09 22:47:42,953 - INFO - === input_sales started for day 8 ===
+2025-11-09 22:47:57,351 - INFO - Daily report saved and closed
+2025-11-09 22:47:57,910 - INFO - === input_sales finished in 0m 14s ===
+2025-11-09 22:48:16,440 - INFO - === Sales automation finished successfully ===
+2025-11-09 22:48:16,441 - INFO - Start time : 2025-11-09 22:46:27
+2025-11-09 22:48:16,441 - INFO - End time   : 2025-11-09 22:48:16
+2025-11-09 22:48:16,441 - INFO - Elapsed    : 1m 48s
+2025-11-09 22:48:42,197 - INFO - === Sales automation started ===
+2025-11-09 22:49:57,378 - INFO - === input_sales started for day 9 ===
+2025-11-09 22:50:12,200 - INFO - Daily report saved and closed
+2025-11-09 22:50:12,726 - INFO - === input_sales finished in 0m 15s ===
+2025-11-09 22:50:21,825 - INFO - === Sales automation finished successfully ===
+2025-11-09 22:50:21,825 - INFO - Start time : 2025-11-09 22:48:42
+2025-11-09 22:50:21,826 - INFO - End time   : 2025-11-09 22:50:21
+2025-11-09 22:50:21,826 - INFO - Elapsed    : 1m 39s
+2025-11-11 08:38:40,404 - INFO - === Sales automation started ===
+2025-11-11 08:39:48,119 - INFO - === input_sales started for day 10 ===
+2025-11-11 08:40:09,076 - INFO - Daily report saved and closed
+2025-11-11 08:40:09,842 - INFO - === input_sales finished in 0m 21s ===
+2025-11-11 08:41:01,217 - INFO - === Sales automation finished successfully ===
+2025-11-11 08:41:01,217 - INFO - Start time : 2025-11-11 08:38:40
+2025-11-11 08:41:01,217 - INFO - End time   : 2025-11-11 08:41:01
+2025-11-11 08:41:01,218 - INFO - Elapsed    : 2m 20s
+2025-11-11 08:46:42,131 - INFO - Script started
+2025-11-11 08:46:44,416 - INFO - Opening new workbook.
+2025-11-11 08:46:46,417 - INFO - Workbook already open.
+2025-11-11 08:46:47,876 - INFO - Script running succesfully, finished in 5.74 seconds
+2025-11-12 08:23:19,401 - INFO - === Sales automation started ===
+2025-11-12 08:24:27,447 - INFO - === input_sales started for day 11 ===
+2025-11-12 08:24:28,903 - INFO - Workbook already open.
+2025-11-12 08:24:37,785 - INFO - Daily report saved and closed
+2025-11-12 08:24:38,213 - INFO - === input_sales finished in 0m 10s ===
+2025-11-12 08:24:40,103 - INFO - === Sales automation finished successfully ===
+2025-11-12 08:24:40,103 - INFO - Start time : 2025-11-12 08:23:19
+2025-11-12 08:24:40,103 - INFO - End time   : 2025-11-12 08:24:40
+2025-11-12 08:24:40,104 - INFO - Elapsed    : 1m 20s
+2025-11-12 08:34:37,949 - INFO - Script started
+2025-11-12 08:34:38,584 - INFO - Opening new workbook.
+2025-11-12 08:34:39,512 - INFO - Workbook already open.
+2025-11-12 08:34:40,232 - INFO - Script running succesfully, finished in 2.28 seconds
+2025-11-13 07:22:42,036 - INFO - === Sales automation started ===
+2025-11-13 07:23:25,652 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 244, in run_sales_automation
+    _save_sales_report(floor_name, coord_key)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 191, in _save_sales_report
+    pyautogui.moveTo(*get_tuple("COORDS", "back_button"), duration=0.5)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\pyautogui\__init__.py", line 593, in wrapper
+    failSafeCheck()
+    ~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\pyautogui\__init__.py", line 1734, in failSafeCheck
+    raise FailSafeException(
+        "PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED."
+    )
+pyautogui.FailSafeException: PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED.
+2025-11-13 07:23:25,658 - INFO - Start time : 2025-11-13 07:22:42
+2025-11-13 07:23:25,659 - INFO - End time   : 2025-11-13 07:23:25
+2025-11-13 07:23:25,659 - INFO - Elapsed    : 0m 43s
+2025-11-13 07:23:25,659 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 280, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 244, in run_sales_automation
+    _save_sales_report(floor_name, coord_key)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 191, in _save_sales_report
+    pyautogui.moveTo(*get_tuple("COORDS", "back_button"), duration=0.5)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\pyautogui\__init__.py", line 593, in wrapper
+    failSafeCheck()
+    ~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\venv\Lib\site-packages\pyautogui\__init__.py", line 1734, in failSafeCheck
+    raise FailSafeException(
+        "PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED."
+    )
+pyautogui.FailSafeException: PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED.
+2025-11-13 07:23:50,765 - INFO - === Sales automation started ===
+2025-11-13 07:24:28,604 - INFO - Start time : 2025-11-13 07:23:50
+2025-11-13 07:24:28,604 - INFO - End time   : 2025-11-13 07:24:28
+2025-11-13 07:24:28,604 - INFO - Elapsed    : 0m 37s
+2025-11-13 07:24:29,071 - INFO - === Sales automation started ===
+2025-11-13 07:24:41,382 - ERROR - Automation failed with an error
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 208, in run_sales_automation
+    input_date = ask_for_date()
+  File "E:\Satrio\Projects\MouseApp\main.py", line 38, in ask_for_date
+    return datetime(today.year, today.month, int(day_str))
+                                             ~~~^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2025-11-13 07:24:41,384 - INFO - Start time : 2025-11-13 07:24:29
+2025-11-13 07:24:41,384 - INFO - End time   : 2025-11-13 07:24:41
+2025-11-13 07:24:41,384 - INFO - Elapsed    : 0m 12s
+2025-11-13 07:24:41,384 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Satrio\Projects\MouseApp\main.py", line 280, in <module>
+    run_sales_automation()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Satrio\Projects\MouseApp\main.py", line 208, in run_sales_automation
+    input_date = ask_for_date()
+  File "E:\Satrio\Projects\MouseApp\main.py", line 38, in ask_for_date
+    return datetime(today.year, today.month, int(day_str))
+                                             ~~~^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2025-11-13 07:27:43,475 - INFO - === Sales automation started ===
+2025-11-13 07:28:28,674 - INFO - Start time : 2025-11-13 07:27:43
+2025-11-13 07:28:28,674 - INFO - End time   : 2025-11-13 07:28:28
+2025-11-13 07:28:28,674 - INFO - Elapsed    : 0m 45s
+2025-11-13 07:34:11,170 - INFO - === Sales automation started ===
+2025-11-13 07:34:25,786 - INFO - Start time : 2025-11-13 07:34:11
+2025-11-13 07:34:25,786 - INFO - End time   : 2025-11-13 07:34:25
+2025-11-13 07:34:25,786 - INFO - Elapsed    : 0m 14s
+2025-11-13 07:40:37,419 - INFO - === Sales automation started ===
+2025-11-13 07:41:39,921 - INFO - === input_sales started for day 12 ===
+2025-11-13 07:41:57,351 - INFO - Daily report saved and closed
+2025-11-13 07:41:57,707 - INFO - === input_sales finished in 0m 17s ===
+2025-11-13 07:42:19,880 - INFO - === Sales automation finished successfully ===
+2025-11-13 07:42:19,881 - INFO - Start time : 2025-11-13 07:40:37
+2025-11-13 07:42:19,882 - INFO - End time   : 2025-11-13 07:42:19
+2025-11-13 07:42:19,882 - INFO - Elapsed    : 1m 42s
+2025-11-13 07:45:14,910 - INFO - Script started
+2025-11-13 07:45:15,514 - INFO - Opening new workbook.
+2025-11-13 07:45:16,357 - INFO - Workbook already open.
+2025-11-13 07:45:17,080 - INFO - Script running succesfully, finished in 2.17 seconds
+2025-11-14 08:08:44,218 - INFO - === Sales automation started ===
+2025-11-14 08:09:52,887 - INFO - === input_sales started for day 13 ===
+2025-11-14 08:09:54,387 - INFO - Workbook already open.
+2025-11-14 08:10:03,989 - INFO - Daily report saved and closed
+2025-11-14 08:10:04,353 - INFO - === input_sales finished in 0m 11s ===
+2025-11-14 08:10:05,471 - INFO - === Sales automation finished successfully ===
+2025-11-14 08:10:05,471 - INFO - Start time : 2025-11-14 08:08:44
+2025-11-14 08:10:05,472 - INFO - End time   : 2025-11-14 08:10:05
+2025-11-14 08:10:05,472 - INFO - Elapsed    : 1m 21s
+2025-11-14 08:17:47,570 - INFO - Script started
+2025-11-14 08:17:48,289 - INFO - Opening new workbook.
+2025-11-14 08:17:49,182 - INFO - Workbook already open.
+2025-11-14 08:17:49,957 - INFO - Script running succesfully, finished in 2.39 seconds
+2025-11-14 08:30:55,033 - INFO - Script started
+2025-11-14 08:30:55,634 - INFO - Workbook already open.
+2025-11-14 08:30:55,683 - INFO - Workbook already open.
+2025-11-14 08:30:57,077 - INFO - Script running succesfully, finished in 2.04 seconds
+2025-11-14 08:41:27,401 - INFO - Script started
+2025-11-14 08:41:28,047 - INFO - Opening new workbook.
+2025-11-14 08:41:28,928 - INFO - Workbook already open.
+2025-11-14 08:41:29,027 - INFO - input row: 382, 157.55800939822782, 400
+2025-11-14 08:41:29,672 - INFO - Script running succesfully, finished in 2.27 seconds
+2025-11-14 09:00:14,046 - INFO - Script started
+2025-11-14 09:00:14,071 - INFO - Opening workbook → E:\1. Sales Strategy\2025\1. DAILY REPORT\251113★ 25년 11월 해외점포 실적동향 (자카르탇점).xlsx
+2025-11-14 09:00:15,440 - INFO - Workbook already open → E:\1. Sales Strategy\2025\1. DAILY REPORT\11. Sales Report Nov 2025.xlsm
+2025-11-14 09:00:15,502 - INFO - input row: 382, value: 159.5580093982278, last_row: 400
+2025-11-14 09:00:16,099 - INFO - Script running succesfully, finished in 2.05 seconds
+2025-11-14 09:03:43,394 - INFO - === Sales automation started ===
+2025-11-14 09:04:08,465 - INFO - Start time : 2025-11-14 09:03:43
+2025-11-14 09:04:08,465 - INFO - End time   : 2025-11-14 09:04:08
+2025-11-14 09:04:08,466 - INFO - Elapsed    : 0m 25s

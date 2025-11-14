@@ -2,7 +2,7 @@ import pyautogui
 import psutil
 import time
 import sales_auto as sato
-from datetime import datetime
+from datetime import datetime, timedelta
 import ctypes
 import os
 import tkinter as tk
@@ -34,7 +34,7 @@ def ask_for_date():
     root.withdraw()  # hide main window
     day_str = simpledialog.askstring("Input", "Enter day number (1-31):")
     root.destroy()
-    today = datetime.today()
+    today = datetime.today() - timedelta(days=1)
     return datetime(today.year, today.month, int(day_str))
 
 def get_password():
@@ -131,7 +131,7 @@ def _daily_sales_analysis(input_day):
     
     # Save File
     pyautogui.press('f8')
-    pyautogui.typewrite("all_brand", interval=0.05)
+    pyautogui.typewrite("all_brand", interval=0.0)
     pyautogui.press('enter')
     # Notice after each command I slip a sleep time just for extra caution
     time.sleep(0.5)
@@ -166,7 +166,6 @@ def _save_sales_report(floor_name, coord_key):
 
     # Floor Selection
     pyautogui.moveTo(*get_tuple("COORDS", coord_key), duration=0.3)
-    time.sleep(0.3)
     pyautogui.click()
     pyautogui.click()
     time.sleep(0.3)
@@ -175,6 +174,7 @@ def _save_sales_report(floor_name, coord_key):
     pyautogui.press('F8')
     time.sleep(0.5)
     pyautogui.typewrite(floor_name, interval=0.05)
+    time.sleep(0.5)
     pyautogui.press('enter')
     time.sleep(0.3)
     pyautogui.press('left')
