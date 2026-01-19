@@ -109,9 +109,10 @@ def _daily_sales_analysis(input_day):
         time.sleep(0.5)
         pyautogui.click()
         pyautogui.click()
-        time.sleep(1)
     
     # Set Date
+    (x, y), rgb = get_rgb("PIXELS", "load_sales_report_menu")
+    wait_for_pixel(x, y, rgb) # adjustable in config to match other device    
     pyautogui.moveTo(*get_tuple("COORDS", "date_field"), duration=0.2)
     pyautogui.click()
     time.sleep(0.5)
@@ -119,7 +120,7 @@ def _daily_sales_analysis(input_day):
     pyautogui.typewrite(input_day, interval=0.08)
     
     # Open feature
-    pyautogui.moveTo(*get_tuple("COORDS", "pay_summary_tab"), duration=0.2) # Cursor memilih tab "Pay Sumamry"
+    pyautogui.moveTo(*get_tuple("COORDS", "pay_summary_tab"), duration=0.2) # Cursor memilih tab "Pay Summary"
     pyautogui.click()
     time.sleep(0.5)
     pyautogui.press('f2')
@@ -172,21 +173,25 @@ def _save_sales_report(floor_name, coord_key):
 
     # Save File
     pyautogui.press('F8')
+    (x, y), rgb = get_rgb("PIXELS", "load_to_save")
+    wait_for_pixel(x, y, rgb)
     time.sleep(0.5)
     pyautogui.typewrite(floor_name, interval=0.05)
+    time.sleep(0.8)
+    pyautogui.press('enter')
+    (x, y), rgb = get_rgb("PIXELS", "load_same_file_exist")
+    wait_for_pixel(x, y, rgb)
+    time.sleep(0.5)    
+    pyautogui.press('left')
     time.sleep(0.5)
     pyautogui.press('enter')
-    time.sleep(0.3)
-    pyautogui.press('left')
-    time.sleep(0.3)
-    pyautogui.press('enter')
-    time.sleep(0.3)
+    time.sleep(0.5)
     pyautogui.press('enter')
     time.sleep(0.5)
 
     # Go back to home
     pyautogui.moveTo(*get_tuple("COORDS", "back_button"), duration=0.5)
-    time.sleep(0.3)
+    time.sleep(0.8)
     pyautogui.click()
     pyautogui.click()
         
