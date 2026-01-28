@@ -38,10 +38,10 @@ def input_sales(day_number):
         daily_sheet.range((6, start_col_index)).value = gf_values
 
         # Floors from config loop
-        start_rows = {"1f": 11, "2f": 17, "3f": 21}
+        start_rows = {"1f": 11, "2f": 16, "3f": 20}
         for floor, path in floor_files.items():
             values = _run_macro_and_get_values(
-                app, path, floor.upper(), "B29:B33" if floor == "1f" else "B29:B31"
+                app, path, floor.upper(), "B29:B32" if floor == "1f" else "B29:B31"
             )
             daily_sheet.range((start_rows[floor], start_col_index)).value = values
         

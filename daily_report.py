@@ -49,7 +49,7 @@ def daily_2(wb_path, sheet_name, sheet_name_2):
     date_input = daily_wb.sheets[sheet_name].range("B4").value
 
     col = int(date_input) + 4
-    row = 36
+    row = 35
 
     input_value = daily_wb.sheets[sheet_name_2].range((row, col)).value
 
