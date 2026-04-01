@@ -5,6 +5,8 @@ import sales_auto as sato
 from datetime import datetime, timedelta
 import ctypes
 import os
+import keyring
+from tkcalendar import Calendar
 import tkinter as tk
 from tkinter import simpledialog
 import configparser
@@ -29,23 +31,69 @@ def get_rgb(section, key):
 #                                       Input Helpers
 # -----------------------------------------------------------------------------------------------------------#
 
+# def ask_for_date():
+   # root = tk.Tk()
+   # root.withdraw()  # hide main window
+   # day_str = simpledialog.askstring("Input", "Silakan Masukkan Tanggalnya Tn. Satrio (1-31):")
+   # root.destroy()
+   # today = datetime.today() - timedelta(days=1) if datetime.today().day > 1 else datetime.today()
+   # return datetime(today.year, today.month, int(day_str))
+    # return datetime(today.year, 2, int(day_str))
+    
 def ask_for_date():
+    selected = []
+
     root = tk.Tk()
-    root.withdraw()  # hide main window
-    day_str = simpledialog.askstring("Input", "Enter day number (1-31):")
-    root.destroy()
-    today = datetime.today() - timedelta(days=1)
-    return datetime(today.year, today.month, int(day_str))
+    root.title("Pilih Tanggal")
+    root.resizable(False, False)
+
+    today = datetime.today() - timedelta(days=1) if datetime.today().day > 1 else datetime.today()
+
+    cal = Calendar(
+        root,
+        selectmode="day",
+        year=today.year,
+        month=today.month,
+        day=today.day,
+        date_pattern="yyyy-mm-dd",
+    )
+    cal.pack(padx=20, pady=20)
+
+    def confirm():
+        selected.append(cal.get_date())
+        root.destroy()
+
+    tk.Button(root, text="Konfirmasi", command=confirm).pack(pady=(0, 15))
+    root.grab_set()
+    root.lift()              # bring window to front
+    root.focus_force()       # force keyboard focus
+    root.attributes("-topmost", True)   # stay on top of all windows
+    root.mainloop()
+
+    if not selected:
+        raise ValueError("Tanggal tidak dipilih.")
+
+    return datetime.strptime(selected[0], "%Y-%m-%d")
+
+def get_file_path(selected_date: datetime) -> str: # Agar dinamis nama file nya 
+    base_folder = config["SETTINGS"]["base_folder"]
+    month_num   = selected_date.month              # e.g. 3
+    month_abbr  = selected_date.strftime("%b")     # e.g. Mar
+    year        = selected_date.year               # e.g. 2026
+
+    filename = f"{month_num}. Sales Report {month_abbr} {year}.xlsm"
+    print(filename)
+    return os.path.join(base_folder, filename)    
 
 def get_password():
-    password = os.getenv("RIS_PASSWORD")
+    password = keyring.get_password('system',"RIS_PASSWORD")
     if not password:
         root = tk.Tk()
         root.withdraw()  # Hide the main tkinter window
-        password = simpledialog.askstring("Password Required", "Enter RIS password:", show='*')
+        password = simpledialog.askstring("Password Dibutuhkan", "Masukin RIS password:", show='*')
         root.destroy()
         if not password:
-            raise ValueError("Password was not provided!")
+            raise ValueError("Password-nya Ga Ada!")
     return password
 
 # -----------------------------------------------------------------------------------------------------------#
@@ -60,7 +108,7 @@ def wait_for_pixel(x, y, expected_rgb, timeout=30):
         if pixel == expected_rgb:
             return True
         time.sleep(0.5)
-    raise TimeoutError(f"UI not ready after {timeout}s at pixel {x},{y}")
+    raise TimeoutError(f"UI belum beres sih {timeout}s at pixel {x},{y}")
 
 def wait_for_process(proc_name, timeout=30):
     """Wait until a process with given name appears."""
@@ -89,7 +137,8 @@ def run_app_and_login(shortcut_path, proc_name):
 
     # Enter password
     password = get_password()
-    pyautogui.typewrite(password, interval=0.05)
+    time.sleep(1)
+    pyautogui.typewrite(password, interval=0.08)
     pyautogui.press("enter")
     time.sleep(0.5)
     pyautogui.press("enter")
@@ -132,7 +181,8 @@ def _daily_sales_analysis(input_day):
     
     # Save File
     pyautogui.press('f8')
-    pyautogui.typewrite("all_brand", interval=0.0)
+    time.sleep(1)
+    pyautogui.typewrite("all_brand", interval=0.08)
     pyautogui.press('enter')
     # Notice after each command I slip a sleep time just for extra caution
     time.sleep(0.5)
@@ -208,6 +258,7 @@ def run_sales_automation():
         app_name = config.get("SETTINGS", "app_name")
        
         input_date = ask_for_date()
+        file_path = get_file_path(input_date) # Path dinamis yang dibuat sebelumnya lewat function
         input_day_str = input_date.strftime("%Y%m%d")
         
         # Open app and enter Password
@@ -219,9 +270,13 @@ def run_sales_automation():
         
         # Saving the front to get cust. transactions and avg cust. transactions.
         pyautogui.press("F8")
-        time.sleep(1)
+        (x, y), rgb = get_rgb("PIXELS", "loading_total_save")
+        wait_for_pixel(x, y, rgb) # adjustable in config to match other device
+        time.sleep(0.5)
         pyautogui.typewrite(str("total_sales"), interval = 0.05)
         pyautogui.press("Enter")
+        (x, y), rgb = get_rgb("PIXELS", "load_same_file_exist")
+        wait_for_pixel(x, y, rgb)
         pyautogui.press('left')
         time.sleep(0.5)
         pyautogui.press('enter')
@@ -254,13 +309,13 @@ def run_sales_automation():
         _daily_sales_analysis(input_day_str)
         
         # Writing in Excel function
-        sato.input_sales(input_date.day)
+        sato.input_sales(input_date.day,file_path)
         
         # Popup done
         ctypes.windll.user32.MessageBoxW(
             0,  # HWND — 0 means no owner window
-            "Script completed successfully!",
-            "Done",
+            "Terima kasih sudah menunggu, sciptnya telat selesai Tn. Satrio!",
+            "Tutup",
             0x00000040 | 0x00040000 | 0x00010000 # MB_ICONINFORMATION + MB_TOPMOST + MB_SETFOREGROUND
         )
     

@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 import configparser
 from logger_setup import logger
 
-def input_sales(day_number):
+def input_sales(day_number, file_path):
     logger.info(f"=== input_sales started for day {day_number} ===")
     start_time = time.time()
     # Load config
@@ -22,10 +22,11 @@ def input_sales(day_number):
 
     try:
         # Open daily report and get reference
-        daily = _get_or_open_wb(paths["daily_report"])
+        daily = _get_or_open_wb(file_path) #Ini path dinamis dari main.py
         daily_sheet = daily.sheets["REVENUE"]
         input_sheet = daily.sheets["INPUT"]
         other_sheet = daily.sheets["Other_Revenue"]
+        rev_share = daily.sheets["RevSharing"]
 
         # Update day number
         input_sheet["B4"].value = day_number
@@ -50,6 +51,9 @@ def input_sales(day_number):
         
         # Other revenue
         _other_revenue_sales(app, input_sheet, other_sheet, paths["all_brand"])
+        
+        # Rev_share
+        Rev_sharing(app, rev_share, paths["all_brand"])
         
         daily.save()
         daily.close()
@@ -81,7 +85,7 @@ def _load_paths(config):
 def _get_or_open_wb(filepath):
     # Normalize path (important for comparisons)
     filepath = os.path.abspath(filepath)
-
+    print("open_wb sato" + filepath)
     # Check all open workbooks in all apps
     for app in xw.apps:
         for wb in app.books:
@@ -92,7 +96,9 @@ def _get_or_open_wb(filepath):
     # If not open, open it
     return xw.books.open(filepath)
         
-# Run macro helper
+# -----------------------------------------------------------------------------------------------------------#
+#                                       Macro Helper
+# -----------------------------------------------------------------------------------------------------------#
 def _run_macro_and_get_values(app, wb_path, sheet_name, cell_range):
     wb = app.books.open(wb_path)
     sheet = wb.sheets[sheet_name]
@@ -134,13 +140,85 @@ def _input_sheet_sales(app, sheet_name, total_sales):
     
     wb.close()
 
+# Other Revenue Input
 def _other_revenue_sales(app, input_sheet, sheet_name, all_brand):
     # Get start column
     start_col_index = int(input_sheet.range("B4").value) + 4
     
     # Revenue
-    other_values = _get_values_other(app, all_brand,"all_brand", "M2:M5")
-    start_rows = {"440106": 4, "440105" : 11, "121160" : 17, "511117" : 23}
+    other_values = _get_values_other(app, all_brand,"all_brand", "M2:M33") # Ini Statis, harus dibuat macro nih
+    start_rows = {"440106": 4, 
+    "440105" : 11, 
+    "121160" : 17, 
+    "511117" : 23,
+    # "670106" : 203,
+    # "670112" : 204, 
+    # "670113" : 205,
+    # "670141" : 206,
+    # "670101" : 207,
+    # "670102" : 208,
+    # "670104" : 209,
+    # "670111" : 210,    
+    # "670105" : 211,
+    # "670118" : 212,    
+    # "670132" : 213,
+    # "670140" : 214,
+    # "670109" : 215,
+    # "670126" : 218,
+    # "670144" : 219, 
+    # "670135" : 220,
+    # "670138" : 221,
+    # "670142" : 222,
+    # "441179" : 223,
+    # "441176" : 224,
+    # "441193" : 225,
+    # "314140" : 228,
+    # "314141" : 229,
+    # "551180" : 235, 
+    # "124150" : 239,
+    # "124136" : 240,
+    # "124137" : 242,
+    # "124139" : 243, 
+    }
     for i, value in enumerate(start_rows):
         sheet_name.range((start_rows[value], start_col_index)).value = other_values[i]
+   
+def Rev_sharing(app, sheet_name, all_brand):
+    # Get start column
+    start_col_index = 15
     
+    # Revenue
+    Rev_val = _get_values_other(app, all_brand,"all_brand", "M6:M33") # Ini Statis, harus dibuat macro nih
+    start_rows = {
+    "670106" : 5,
+    "670112" : 6, 
+    "670113" : 7,
+    "670141" : 8,
+    "670101" : 9,
+    "670102" : 10,
+    "670104" : 11,
+    "670111" : 12,    
+    "670105" : 13,
+    "670118" : 14,    
+    "670132" : 15,
+    "670140" : 16,
+    "670109" : 17,
+    "670126" : 18,
+    "670144" : 19, 
+    "670135" : 20,
+    "670138" : 21,
+    "670142" : 22,
+    "441179" : 23,
+    "441176" : 24,
+    "441193" : 25,
+    "314140" : 26,
+    "314141" : 27,
+    "551180" : 28, 
+    "124150" : 29,
+    "124136" : 30,
+    "124137" : 31,
+    "124139" : 32, 
+    "441177" : 33
+    }
+    for i, value in enumerate(start_rows):
+        sheet_name.range((start_rows[value], start_col_index)).value = Rev_val[i]    
