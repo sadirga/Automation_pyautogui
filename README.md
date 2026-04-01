@@ -1,4 +1,4 @@
-# 🖱️ Lazitive — Automated Excel Input Tool
+# 🖱️ DailaZy — Automated Excel Input Tool
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)  
 ![License](https://img.shields.io/badge/License-MIT-green.svg)  
