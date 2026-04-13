@@ -4,6 +4,8 @@ from datetime import datetime, timedelta
 import configparser
 import calendar
 import os
+from tkcalendar import Calendar
+import tkinter as tk
 from logger_setup import logger
 
 def get_or_open_wb(filepath):
@@ -21,6 +23,51 @@ def get_or_open_wb(filepath):
     app = xw.App(visible=True)
     wb = app.books.open(filepath)
     return wb, app, True   # newly opened
+
+def get_file_path(selected_date: datetime) -> str: # Agar dinamis nama file nya 
+    base_folder = config["SETTINGS"]["base_folder"]
+    month_num   = selected_date.month              # e.g. 3
+    month_abbr  = selected_date.strftime("%b")     # e.g. Mar
+    year        = selected_date.year               # e.g. 2026
+
+    filename = f"{month_num}. Sales Report {month_abbr} {year}.xlsm"
+    print(filename)
+    return os.path.join(base_folder, filename)   
+
+def ask_for_date():
+    selected = []
+
+    root = tk.Tk()
+    root.title("Pilih Tanggal")
+    root.resizable(False, False)
+
+    today = datetime.today() - timedelta(days=1) if datetime.today().day > 1 else datetime.today()
+
+    cal = Calendar(
+        root,
+        selectmode="day",
+        year=today.year,
+        month=today.month,
+        day=today.day,
+        date_pattern="yyyy-mm-dd",
+    )
+    cal.pack(padx=20, pady=20)
+
+    def confirm():
+        selected.append(cal.get_date())
+        root.destroy()
+
+    tk.Button(root, text="Konfirmasi", command=confirm).pack(pady=(0, 15))
+    root.grab_set()
+    root.lift()              # bring window to front
+    root.focus_force()       # force keyboard focus
+    root.attributes("-topmost", True)   # stay on top of all windows
+    root.mainloop()
+
+    if not selected:
+        raise ValueError("Tanggal tidak dipilih.")
+
+    return datetime.strptime(selected[0], "%Y-%m-%d")
         
 def daily_2(wb_path, sheet_name, sheet_name_2):   
     
@@ -32,22 +79,25 @@ def daily_2(wb_path, sheet_name, sheet_name_2):
     dr2_sheet_name = config.get("SHEETS", "dr2_sheet_name")
 
     # Build filename safely
-    yesterday = (datetime.now() - timedelta(days=1)).strftime("%y%m%d")
-    year_input = datetime.now().strftime("%y")
-    month_input = datetime.now().month
+    input_date = ask_for_date()
+    yesterday = input_date.strftime("%y%m%d")
+    #yesterday = (datetime.now() - timedelta(days=1)).strftime("%y%m%d")
+    year_input = input_date.strftime("%y")
+    month_input = input_date.month
     last_day = calendar.monthrange(datetime.now().year, datetime.now().month)[1]
-
+    
     front_name = f"{yesterday}★ {year_input}년 {month_input}월 "
     final_filename = os.path.join(file_path, f"{front_name}{base_filename}")
-
+    
     # Open DR2 workbook
     wb, app, new_app = get_or_open_wb(final_filename)
     ws = wb.sheets[dr2_sheet_name]
 
     # Open daily workbook
     daily_wb, daily_app, new_daily_app = get_or_open_wb(wb_path)
-    date_input = daily_wb.sheets[sheet_name].range("B4").value
-
+    date_input = input_date.day
+    #date_input = daily_wb.sheets[sheet_name].range("B4").value
+    print(last_day,yesterday, date_input)
     col = int(date_input) + 4
     row = 35
 

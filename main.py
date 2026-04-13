@@ -31,15 +31,6 @@ def get_rgb(section, key):
 #                                       Input Helpers
 # -----------------------------------------------------------------------------------------------------------#
 
-# def ask_for_date():
-   # root = tk.Tk()
-   # root.withdraw()  # hide main window
-   # day_str = simpledialog.askstring("Input", "Silakan Masukkan Tanggalnya Tn. Satrio (1-31):")
-   # root.destroy()
-   # today = datetime.today() - timedelta(days=1) if datetime.today().day > 1 else datetime.today()
-   # return datetime(today.year, today.month, int(day_str))
-    # return datetime(today.year, 2, int(day_str))
-    
 def ask_for_date():
     selected = []
 
@@ -137,8 +128,8 @@ def run_app_and_login(shortcut_path, proc_name):
 
     # Enter password
     password = get_password()
-    time.sleep(1)
-    pyautogui.typewrite(password, interval=0.08)
+    time.sleep(0.7)
+    pyautogui.typewrite(password, interval=0.06)
     pyautogui.press("enter")
     time.sleep(0.5)
     pyautogui.press("enter")
@@ -152,21 +143,57 @@ def _open_sales_analysis():
         pyautogui.click()
         time.sleep(1)
 
+def _efficiency_analysis(input_mth):
+    for key in ["efficiency_analysis_1", "efficiency_analysis_2"]:
+        pyautogui.moveTo(*get_tuple("COORDS", key), duration=0.2)
+        time.sleep(0.3)
+        pyautogui.click()
+        pyautogui.click()
+    
+    # Set Date
+    (x, y), rgb = get_rgb("PIXELS", "load_profit_menu")
+    wait_for_pixel(x, y, rgb) # adjustable in config to match other device    
+    pyautogui.moveTo(*get_tuple("COORDS", "date_field_profit"), duration=0.2)
+    pyautogui.click()
+    pyautogui.click()
+    time.sleep(0.5)
+    pyautogui.typewrite(input_mth, interval=0.08)
+    time.sleep(0.5)
+    pyautogui.press('tab')
+    pyautogui.typewrite(input_mth, interval=0.08)
+    
+    # Option Button
+    pyautogui.moveTo(*get_tuple("COORDS", "option_button"), duration=0.3)
+    time.sleep(0.5)
+    pyautogui.click()
+
+    # Unit Rp
+    pyautogui.moveTo(*get_tuple("COORDS", "unit_button_profit"), duration=0.3)
+    time.sleep(0.5)
+    pyautogui.click()
+
+    # OK Button
+    pyautogui.moveTo(*get_tuple("COORDS", "ok_button_profit"), duration=0.3)
+    time.sleep(0.5)
+    pyautogui.click()
+    
+    
+
 def _daily_sales_analysis(input_day):
     for key in ["daily_sales_1", "daily_sales_2"]:
         pyautogui.moveTo(*get_tuple("COORDS", key), duration=0.2)
         time.sleep(0.5)
         pyautogui.click()
         pyautogui.click()
-    
+        
     # Set Date
     (x, y), rgb = get_rgb("PIXELS", "load_sales_report_menu")
     wait_for_pixel(x, y, rgb) # adjustable in config to match other device    
     pyautogui.moveTo(*get_tuple("COORDS", "date_field"), duration=0.2)
     pyautogui.click()
     time.sleep(0.5)
-    pyautogui.typewrite(input_day, interval=0.08)
-    pyautogui.typewrite(input_day, interval=0.08)
+    pyautogui.typewrite(input_day, interval=0.06)
+    pyautogui.typewrite(input_day, interval=0.06)
     
     # Open feature
     pyautogui.moveTo(*get_tuple("COORDS", "pay_summary_tab"), duration=0.2) # Cursor memilih tab "Pay Summary"
@@ -182,7 +209,7 @@ def _daily_sales_analysis(input_day):
     # Save File
     pyautogui.press('f8')
     time.sleep(1)
-    pyautogui.typewrite("all_brand", interval=0.08)
+    pyautogui.typewrite("all_brand", interval=0.06)
     pyautogui.press('enter')
     # Notice after each command I slip a sleep time just for extra caution
     time.sleep(0.5)
@@ -195,7 +222,7 @@ def _daily_sales_analysis(input_day):
 
 def _set_date_and_options(input_day_str):
     # Setting input_day_str date as the targeted date
-    pyautogui.typewrite(input_day_str, interval=0.08)
+    pyautogui.typewrite(input_day_str, interval=0.06)
     time.sleep(1)
 
     # Option Button
@@ -225,23 +252,55 @@ def _save_sales_report(floor_name, coord_key):
     pyautogui.press('F8')
     (x, y), rgb = get_rgb("PIXELS", "load_to_save")
     wait_for_pixel(x, y, rgb)
-    time.sleep(0.5)
+    time.sleep(0.4)
     pyautogui.typewrite(floor_name, interval=0.05)
-    time.sleep(0.8)
+    time.sleep(0.4)
     pyautogui.press('enter')
     (x, y), rgb = get_rgb("PIXELS", "load_same_file_exist")
     wait_for_pixel(x, y, rgb)
-    time.sleep(0.5)    
+    time.sleep(0.4)    
     pyautogui.press('left')
-    time.sleep(0.5)
+    time.sleep(0.4)
     pyautogui.press('enter')
-    time.sleep(0.5)
+    time.sleep(0.4)
     pyautogui.press('enter')
-    time.sleep(0.5)
+    time.sleep(0.4)
 
     # Go back to home
     pyautogui.moveTo(*get_tuple("COORDS", "back_button"), duration=0.5)
-    time.sleep(0.8)
+    time.sleep(0.6)
+    pyautogui.click()
+    pyautogui.click()
+
+def _save_profit_report(floor_name, coord_key):
+
+    # Floor Selection
+    pyautogui.moveTo(*get_tuple("COORDS", coord_key), duration=0.3)
+    pyautogui.click()
+    pyautogui.click()
+    time.sleep(0.3)
+
+    # Save File
+    pyautogui.press('F8')
+    (x, y), rgb = get_rgb("PIXELS", "load_to_save")
+    wait_for_pixel(x, y, rgb)
+    time.sleep(0.4)
+    pyautogui.typewrite(floor_name, interval=0.05)
+    time.sleep(0.4)
+    pyautogui.press('enter')
+    (x, y), rgb = get_rgb("PIXELS", "load_same_file_exist")
+    wait_for_pixel(x, y, rgb)
+    time.sleep(0.4)    
+    pyautogui.press('left')
+    time.sleep(0.4)
+    pyautogui.press('enter')
+    time.sleep(0.4)
+    pyautogui.press('enter')
+    time.sleep(0.4)
+
+    # Go back to home
+    pyautogui.moveTo(*get_tuple("COORDS", "back_button"), duration=0.5)
+    time.sleep(0.4)
     pyautogui.click()
     pyautogui.click()
         
@@ -260,6 +319,7 @@ def run_sales_automation():
         input_date = ask_for_date()
         file_path = get_file_path(input_date) # Path dinamis yang dibuat sebelumnya lewat function
         input_day_str = input_date.strftime("%Y%m%d")
+        input_mth_str = input_date.strftime("%Y%m")
         
         # Open app and enter Password
         run_app_and_login(app_path, app_name)
@@ -291,7 +351,7 @@ def run_sales_automation():
         pyautogui.click()
         time.sleep(0.5)
         
-        # Save Floors
+        # Save Sales by Floors
         for floor_name, coord_key  in [
             ("GF", "floor_GF"),
             ("1F", "floor_1F"),
@@ -302,14 +362,38 @@ def run_sales_automation():
         
         # MenuOpn
         pyautogui.moveTo(*get_tuple("COORDS", "menu_open"), duration=0.1)
-        time.sleep(0.5  )
+        time.sleep(0.5)
         pyautogui.click()
         
         # Sales Report
         _daily_sales_analysis(input_day_str)
         
+        # Profit Report 
+        # MenuOpn
+        pyautogui.moveTo(*get_tuple("COORDS", "menu_open"), duration=0.1)
+        time.sleep(0.5  )
+        pyautogui.click()    
+        
+        _efficiency_analysis(input_mth_str)
+        
+        # Open
+        pyautogui.moveTo(*get_tuple("COORDS", "open_total_sales"), duration=0.5)
+        time.sleep(0.5)
+        pyautogui.click()
+        pyautogui.click()
+        time.sleep(0.5)
+        
+        # Save Profits by Floors
+        for floor_name, coord_key  in [
+            ("GF_p", "floor_GF"),
+            ("1F_p", "floor_1F"),
+            ("2F_p", "floor_2F"),
+            ("3F_p", "floor_3F"),
+        ]:
+            _save_profit_report(floor_name, coord_key)
+        
         # Writing in Excel function
-        sato.input_sales(input_date.day,file_path)
+        sato.run_daily_sales_input(input_date.day,file_path)
         
         # Popup done
         ctypes.windll.user32.MessageBoxW(
